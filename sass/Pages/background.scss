@@ -1,0 +1,24 @@
+@media (min-width: 320px) and (max-width: 599px){
+
+	#block-page{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 500px;
+	}
+
+	.reserve{
+		@include background_section;
+	}
+		
+	.operation{
+		@include background_section;
+	}
+
+	.restaurant{
+		@include background_section;
+	}
+
+
+
+}
