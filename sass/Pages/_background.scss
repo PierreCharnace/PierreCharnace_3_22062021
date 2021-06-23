@@ -1,16 +1,26 @@
-@media (min-width: 320px) and (max-width: 599px){
+
+	body{
+		margin: 0;
+	}
 
 	#block-page{
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
-		width: 500px;
+		flex-wrap: wrap;
+		width: 100%;
+		font-family: sans-serif;
 	}
 
 	.reserve{
 		@include background_section;
-	}
+		background-color: $colour-background;
 		
+		&__text{
+			width: 85%
+		}
+	}
+
+	
 	.operation{
 		@include background_section;
 	}
@@ -21,4 +31,4 @@
 
 
 
-}
+

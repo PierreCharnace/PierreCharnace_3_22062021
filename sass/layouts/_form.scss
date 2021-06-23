@@ -1,0 +1,25 @@
+.form{
+	display: flex;
+	width: 100%;
+	padding: 1rem 15% 1rem 25%;
+	background-color: $colour-form;
+	border-top:  0.2rem inset rgba($color: $colour-form, $alpha: 0.2);
+
+		&__in{
+			width: 100%;
+			border: $colour-form;
+			background-color: $colour-form;
+			font-size: 1.2rem;
+
+			&::placeholder{
+				color: black;
+			}
+		}
+
+	}
+
+.fa-map-marker-alt{
+	margin-right: 5%;
+	font-size: 1.3rem;
+
+}
