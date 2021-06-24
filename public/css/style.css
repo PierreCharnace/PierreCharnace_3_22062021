@@ -1,13 +1,45 @@
-form > button {
-  display: block;
-  color: #fff;
-  font-size: 1.1rem;
-  height: 50px;
+h1 {
+  width: 91%;
+  margin-left: 20px;
+}
+
+h2 {
+  width: 100%;
+  padding: 2rem 0 0 5%;
+}
+
+/*Button reserve*/
+.reserve__btn {
+  width: 300px;
+  height: 4rem;
   background: #9356DC;
-  padding: 0 1rem 0 1rem;
+  color: #fff;
+  font-size: 1.2rem;
   border-radius: 5rem;
   border: none;
   box-shadow: 0 0.4rem 0.5rem lightgrey;
+}
+
+/*Buttons operation*/
+.ope {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ope__btn {
+  width: 90%;
+  height: 90px;
+  margin: 3%;
+  border-radius: 1.2em;
+  border: none;
+  box-shadow: 0.3rem 0.3rem 0.8rem lightgrey;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+.ope .fa-button {
+  padding-right: 5%;
+  color: grey;
 }
 
 header {
@@ -31,7 +63,7 @@ header {
   width: 100%;
   border: #ebebeb;
   background-color: #ebebeb;
-  font-size: 1.2rem;
+  font-size: 1.05em;
 }
 .form__in::placeholder {
   color: black;
@@ -59,6 +91,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  font-size: 1.13em;
   font-family: sans-serif;
 }
 
@@ -68,9 +101,12 @@ body {
   flex-wrap: wrap;
   width: 100%;
   background-color: #f5f5f5;
+  padding-bottom: 75px;
+  text-align: center;
 }
 .reserve__text {
   width: 85%;
+  height: 200px;
 }
 
 .operation {

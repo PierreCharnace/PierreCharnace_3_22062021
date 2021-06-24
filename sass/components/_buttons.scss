@@ -1,11 +1,40 @@
-form>button{
-	display: block;
-	color: #fff;
-	font-size: 1.1rem;
-	height: 50px;
+
+
+			/*Button reserve*/
+
+.reserve__btn{
+	width: 300px;
+	height: 4rem;
 	background: $colour-primary;
-	padding: 0 1rem 0 1rem ;
+	color: #fff;
+	font-size: 1.2rem;
 	border-radius: 5rem;
 	border: none;
-	box-shadow: 0 0.4rem 0.5rem lightgrey;
+	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
+}
+
+			/*Buttons operation*/
+.ope{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	
+
+	&__btn{
+		width: 90%;
+		height: 90px;
+		margin: 3%;
+		border-radius: 1.2em;
+		border: none;
+		box-shadow: 0.3rem 0.3rem 0.8rem $colour-shadow;
+		font-size: 1rem;
+		font-weight: bold;
+		background-color: $colour-background;
+	}
+
+	.fa-button{
+		padding-right: 5%;
+		color: grey;
+	}
+
 }
