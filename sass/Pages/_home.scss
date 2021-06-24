@@ -7,8 +7,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		width: 100%;
-		
+		width: 100%;	
 		font-size: 1.13em;
 		font-family: sans-serif;
 	}
@@ -16,12 +15,12 @@
 	.reserve{
 		@include background-section;
 		background-color: $colour-background;
-		padding-bottom: 75px;
+		padding-bottom: 60px;
 		text-align: center;
 
 		&__text{
 			width: 85%;
-			height: 200px;
+			height: 190px;
 		}
 	}
 
@@ -29,11 +28,12 @@
 
 
 	.operation{
-		@include background-section;
+		@include background-section;	
 	}
 
 	.restaurant{
 		@include background-section;
+		background-color: $colour-background;
 	}
 
 

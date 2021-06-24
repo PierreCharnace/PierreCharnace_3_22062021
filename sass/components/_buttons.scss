@@ -3,38 +3,60 @@
 			/*Button reserve*/
 
 .reserve__btn{
-	width: 300px;
-	height: 4rem;
+	width: 220px;
+	height: 3.3rem;
 	background: $colour-primary;
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	border-radius: 5rem;
 	border: none;
 	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
 }
 
 			/*Buttons operation*/
+			
 .ope{
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 100%;
-	
+	list-style-type: none;
+	padding: 0 0 0 0;
 
 	&__btn{
+		display: flex;
+		align-items: center;
 		width: 90%;
-		height: 90px;
-		margin: 3%;
+		min-width: 300px;
+		height: 80px;
+		margin:3.5%  0 3.5% 1.5%;
+		padding: 0 0 0 0 ;
 		border-radius: 1.2em;
 		border: none;
-		box-shadow: 0.3rem 0.3rem 0.8rem $colour-shadow;
+		box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: $colour-background;
 	}
-
-	.fa-button{
-		padding-right: 5%;
-		color: grey;
+}
+	.flea{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 25px;
+		height: 25px;
+		margin-left: -0.9rem;
+		border-radius: 100%;
+		color: white;
+		font-style: sans-serif;
+		background-color: $colour-primary;
 	}
 
-}
+	.fa-button{
+		padding: 0 1rem 0 1rem;
+		color: grey;
+		font-size: 1.3em;
+	}
+
+	
+

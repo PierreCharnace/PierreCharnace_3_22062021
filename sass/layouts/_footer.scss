@@ -1,11 +1,27 @@
 
 
 footer{
-	width: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	background-color: #45433e;
 
 	& img{
-		width: 50px;
-		height: 50px;
+		color: white;
+		width: 25%;
+		height: 100%;
+	}
+
+	& > ul{
+		
+		color: white;
+		list-style-type: none;
+		
+	}
+	& a{
+		color: white;
+		text-decoration: none;
 	}
 }
 
