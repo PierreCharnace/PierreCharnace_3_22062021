@@ -2,15 +2,8 @@
 
 			/*Button reserve*/
 
-.reserve__btn{
-	width: 220px;
-	height: 3.3rem;
-	background: $colour-primary;
-	color: #fff;
-	font-size: 1rem;
-	border-radius: 5rem;
-	border: none;
-	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
+.btn-push{
+	@include btn-push;
 }
 
 			/*Buttons operation*/
@@ -23,11 +16,23 @@
 	list-style-type: none;
 	padding: 0 0 0 0;
 
+	& > li{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		& form{
+			display: flex;
+			justify-content: center;
+			width: 96%;
+			max-width: 420px;
+		}
+	}
+
 	&__btn{
 		display: flex;
 		align-items: center;
-		width: 90%;
-		min-width: 300px;
+		@include element-width-mobile;
 		height: 80px;
 		margin:3.5%  0 3.5% 1.5%;
 		padding: 0 0 0 0 ;
@@ -59,4 +64,25 @@
 	}
 
 	
+			/*Button_new_in_restaurants*/
 
+
+.btn-new{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0%;
+	top: 5%;
+	width: 80px;
+	height: 30px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: darkgreen;
+	background-color: $colour-tertiary;
+}
+
+
+.btn-push{
+	@include btn-push;
+}

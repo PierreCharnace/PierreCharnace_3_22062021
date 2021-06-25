@@ -2,9 +2,9 @@
 
 
 	&__card{
+		position: relative;
 		display: flex;
-		width: 90%;
-		max-width: 400px;
+		@include element-width-mobile;
 		height: 250px;
 		border-radius: 1em;
 		background-color: white;

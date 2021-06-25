@@ -5,27 +5,45 @@ footer{
 	background-color: $background-color-footer;
 
 	& a{
-		width: 85%;
-		max-width: 400px;
-		color: white;
+		@include element-width-mobile;
+		margin-top: 1rem;
+		color: $colour-font;
 		text-decoration: none;
 	}
 
 	& img{
-		width: 30%;
-		height: 100%;
-		color: white;
+		width: 35%;
+		height: 65%;
+		margin-left: 0.3rem;
+		filter: invert(1);
+		color: $colour-font;
 	}
 
 	& > ul{
-		width: 85%;
-		max-width: 400px;
+		@include element-width-mobile;
+		margin-top: 0.5em;
 		padding: 0;
-		color: white;
+		color: $colour-font;
 		list-style-type: none;
 		
 	}
+	&  li{
+		width: 100%;
+		margin: 0.5rem;
+		font-size: 0.9rem;
+	}
 
+}
+
+.foot-icon{
+	font-weight: 600;
+}
+
+.fa-utensils{
+	padding-right: 1.5rem;
+}
+.fa-hands-helping{
+	padding-right: 1.1rem;
 }
 
 

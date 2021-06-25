@@ -4,3 +4,21 @@
 	flex-wrap: wrap;
 	width: 100%;
 }
+
+@mixin element-width-mobile {
+	width: 90%;
+	max-width: 400px;
+}
+
+@mixin btn-push {
+	width: 230px;
+	height: 3.3rem;
+	background: linear-gradient(170deg, rgba(255,121,218,.9), rgba(255,121,218,0) 90.71%),
+            linear-gradient(0deg, rgba(146,86,220,.9), rgba(146,86,220,.9));
+	color: $colour-font;
+	font-size: 1rem;
+	font-weight: 600;
+	border-radius: 5rem;
+	border: none;
+	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
+}

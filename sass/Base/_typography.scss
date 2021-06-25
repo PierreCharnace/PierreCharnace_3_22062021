@@ -6,17 +6,12 @@ h1{
 h2{
 	font-weight: 900 ;
 	font-size: 1.2em;
-	width: 90%;
-	max-width: 400px;
+	@include element-width-mobile;
 	padding: 2rem 0 0 0;
 }
 
 .operation h2{
-	font-weight: 900 ;
-	font-size: 1.2em;
-	width: 90%;
-	max-width: 290px;
-	padding: 2rem 0 0 0;
+	max-width: 380px;
 }
 
 h3{
