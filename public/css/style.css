@@ -113,23 +113,28 @@ header {
 
 footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   background-color: #45433e;
 }
-footer img {
-  color: white;
-  width: 25%;
-  height: 100%;
-}
-footer > ul {
-  color: white;
-  list-style-type: none;
-}
 footer a {
+  width: 85%;
+  max-width: 400px;
   color: white;
   text-decoration: none;
+}
+footer img {
+  width: 30%;
+  height: 100%;
+  color: white;
+}
+footer > ul {
+  width: 85%;
+  max-width: 400px;
+  padding: 0;
+  color: white;
+  list-style-type: none;
 }
 
 body {
