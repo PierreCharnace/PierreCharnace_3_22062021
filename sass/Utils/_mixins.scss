@@ -11,10 +11,11 @@
 }
 
 @mixin btn-push {
-	width: 230px;
+	width: 110%;
+	min-width: 170px;
 	height: 3.3rem;
 	background: linear-gradient(170deg, rgba(255,121,218,.9), rgba(255,121,218,0) 90.71%),
-            linear-gradient(0deg, rgba(146,86,220,.9), rgba(146,86,220,.9));
+           	    linear-gradient(0deg, rgba(146,86,220,.9), rgba(146,86,220,.9));
 	color: $colour-font;
 	font-size: 1rem;
 	font-weight: 600;
