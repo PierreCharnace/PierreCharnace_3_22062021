@@ -14,9 +14,10 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	margin-top: 250px;
+	margin: 250px 0 110px 0;
 	border-radius: 2em 2em 0 0;
 	background-color: $colour-background;
+	font-size: 1rem;
 }
 
 
@@ -24,9 +25,9 @@
 .meal{
 	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
-	min-width: 300px;
-	height: 18%;
+	width: 90%;
+	max-width: 400px;
+	height: 5%;
 	font-size: 1rem;
 	padding: 0.5rem 0 0.5rem 0;
 	margin: 0.5rem 0 0.5rem 0;
@@ -34,13 +35,26 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 
-	& > p{
-		margin: 0.2rem;
+	&__recipe{
+		display: flex;
+		flex-wrap: wrap;
+		height: 100%;
+		width: 80%;
+	
 
-		& span{
-			font-weight: bold;
+		& h3{
+
+		}
+
+		& > p{
+			margin: 0;
 		}
 	}
+
+	& span{
+		font-weight: bold;
+	}
+	
 }
 
 
