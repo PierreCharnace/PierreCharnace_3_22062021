@@ -129,6 +129,17 @@ body {
   border-radius: 5rem;
   border: none;
   box-shadow: 0 0.4rem 0.5rem lightgrey;
+  margin-bottom: 60px;
+}
+
+.fa-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  font-size: 1.5rem;
+  stroke-width: 1px;
 }
 
 header {
@@ -217,7 +228,6 @@ footer li {
   flex-wrap: wrap;
   width: 100%;
   background-color: #f5f5f5;
-  padding-bottom: 60px;
   text-align: center;
 }
 .reserve__text {
@@ -238,6 +248,7 @@ footer li {
   flex-wrap: wrap;
   width: 100%;
   background-color: #f5f5f5;
+  padding-bottom: 40px;
 }
 
 .block-main {
@@ -255,18 +266,28 @@ footer li {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 250px 0 110px 0;
+  margin: 250px 0 45px 0;
   border-radius: 2em 2em 0 0;
   background-color: #f5f5f5;
   font-size: 1rem;
 }
-.menu > h1 {
-  width: 90%;
+.menu__title {
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 440px;
+  margin-top: 30px;
   font-family: "Shrikhand";
-  font-weight: 400;
+  font-size: 1.16rem;
+}
+.menu__title > h1 {
+  margin: 0 0 0 20px;
 }
 .menu > h2 {
   text-decoration: underline #99E2D0 3px;
+  text-underline-offset: 0.4em;
   font-weight: 300;
 }
 
@@ -331,14 +352,6 @@ footer li {
 }
 .restaurant__card figcaption div p {
   margin-top: 0.5rem;
-}
-.restaurant__card figcaption .fa-heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  height: 50px;
-  font-size: 1.5rem;
 }
 .restaurant__card img {
   width: 100%;

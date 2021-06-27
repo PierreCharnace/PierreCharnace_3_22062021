@@ -85,4 +85,15 @@
 
 .btn-push{
 	@include btn-push;
+	margin-bottom: 60px;
 }
+
+.fa-heart{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 30%;
+			height: 50px;
+			font-size: 1.5rem;
+			stroke-width: 1px;
+		}

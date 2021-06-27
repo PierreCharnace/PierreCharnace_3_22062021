@@ -15,19 +15,31 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	margin: 250px 0 110px 0;
+	margin: 250px 0 45px 0;
 	border-radius: 2em 2em 0 0;
 	background-color: $colour-background;
 	font-size: 1rem;
 
-	& > h1{
-		width: 90%;
+	&__title{
+		display: flex;
+		flex-wrap: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		max-width: 440px;
+		margin-top: 30px;
 		font-family: 'Shrikhand';
-		font-weight: 400;
+		font-size: 1.16rem;
+		
+		& > h1{
+			
+			margin: 0 0 0 20px;
+		}
 	}
 
 	& > h2{
 		text-decoration: underline $colour-tertiary 3px;
+		text-underline-offset: 0.4em;
 		font-weight: 300;
 	}
 }

@@ -1,7 +1,7 @@
 	.reserve{
 		@include background-section;
 		background-color: $colour-background;
-		padding-bottom: 60px;
+		
 		text-align: center;
 
 		&__text{
@@ -17,6 +17,7 @@
 	.restaurant{
 		@include background-section;
 		background-color: $colour-background;
+		padding-bottom: 40px;
 	}
 
 
