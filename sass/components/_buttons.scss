@@ -53,7 +53,6 @@
 		margin-left: -0.9rem;
 		border-radius: 100%;
 		color: white;
-		font-style: sans-serif;
 		background-color: $colour-primary;
 	}
 
@@ -89,11 +88,16 @@
 }
 
 .fa-heart{
-			display: flex;
+			display: flex!important;
 			justify-content: center;
 			align-items: center;
 			width: 30%;
 			height: 50px;
 			font-size: 1.5rem;
-			stroke-width: 1px;
 		}
+
+
+h2 > span{
+		text-decoration: underline $colour-tertiary 3px;
+		text-underline-offset: 0.4em;
+}

@@ -1,14 +1,23 @@
 
-.block-main{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-image: url(/public/img/img_la_note_enchantée.jpg);
-	background-color: $colour-background;
-	background-size: 100% 25%;
-	background-repeat: no-repeat;
+.block-main--ledelicedessens{
+	@include backgrimg;
+	background-image: url(/public/img/img_le_delice_des_sens.jpg);
 }
 
+.block-main--alafrancaise{
+	@include backgrimg;
+	background: url(/public/img/img_la_note_enchantée.jpg);
+}
+
+.block-main--lanoteenchantee{
+	@include backgrimg;
+	background-image: url(/public/img/img_la_note_enchantée.jpg);
+}
+
+.block-main--lapalettedugout{
+	@include backgrimg;
+	background-image: url(/public/img/img_la_palette_du_gout.jpg);
+}
 
 .menu{
 	display: flex;
@@ -22,24 +31,21 @@
 
 	&__title{
 		display: flex;
-		flex-wrap: row;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
+		height: 30px;
 		max-width: 440px;
-		margin-top: 30px;
+		margin-top: 40px;
 		font-family: 'Shrikhand';
-		font-size: 1.16rem;
+		font-size: 115%;
 		
 		& > h1{
 			
-			margin: 0 0 0 20px;
 		}
 	}
 
 	& > h2{
-		text-decoration: underline $colour-tertiary 3px;
-		text-underline-offset: 0.4em;
 		font-weight: 300;
 	}
 }
@@ -81,7 +87,7 @@
 
 	& span{
 		width: 10%;
-		margin-top: 35px;
+		margin: 35px 0 0 15px;
 		font-weight: 500;
 	}
 	

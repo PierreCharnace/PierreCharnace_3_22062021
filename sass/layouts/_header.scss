@@ -1,10 +1,21 @@
 header{
-	width: 50%;
+	
+	width: 100%;
 	padding: 5% 0 3% 0;
+}
+
+nav{
+	display: flex;
+	
 }
 	
 #logo{
-	width: 100%;
+	width: 60%;
 	height: 100%;
 }	
 
+.arrow-box{
+	text-decoration: none;
+	color: black;
+	margin: 0 20% 0 5%;
+}
