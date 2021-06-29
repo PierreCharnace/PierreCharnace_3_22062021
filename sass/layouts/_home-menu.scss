@@ -6,7 +6,7 @@
 
 .block-main--alafrancaise{
 	@include backgrimg;
-	background: url(/public/img/img_la_note_enchantée.jpg);
+	background: url(/public/img/img_a_la_francaise.jpg);
 }
 
 .block-main--lanoteenchantee{
@@ -16,7 +16,7 @@
 
 .block-main--lapalettedugout{
 	@include backgrimg;
-	background-image: url(/public/img/img_la_palette_du_gout.jpg);
+	background: url(/public/img/img_la_palette_du_gout.jpg);
 }
 
 .menu{
@@ -29,6 +29,7 @@
 	background-color: $colour-background;
 	font-size: 1rem;
 
+
 	&__title{
 		display: flex;
 		justify-content: space-between;
@@ -39,10 +40,7 @@
 		margin-top: 40px;
 		font-family: 'Shrikhand';
 		font-size: 115%;
-		
-		& > h1{
-			
-		}
+	
 	}
 
 	& > h2{

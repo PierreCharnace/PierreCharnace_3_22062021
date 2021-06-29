@@ -42,6 +42,14 @@
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: $colour-background;
+
+		&:focus{
+			background-color: rgba(146,86,220,.1);
+		}
+
+		&:focus > .fa-button{
+			color: $colour-primary;
+		}
 	}
 }
 	.flea{
@@ -60,6 +68,7 @@
 		padding: 0 1rem 0 1rem;
 		color: grey;
 		font-size: 1.3em;
+		
 	}
 
 	
