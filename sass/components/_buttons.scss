@@ -42,6 +42,7 @@
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: $colour-background;
+		transition-duration: 0.2s;
 
 		&:focus{
 			background-color: rgba(146,86,220,.1);

@@ -28,12 +28,16 @@
 		border: 6px solid $colour-primary;
 		border-color: $colour-primary transparent $colour-primary transparent;
 		animation: lds-dual-ring 2s  linear infinite;
-		
+	      }
 	      @keyframes lds-dual-ring {
-		0% {
-		  transform: rotate(0deg);
+			0% {
+			transform: rotate(0deg);
+			}
+			100% {
+			transform: rotate(360deg);
+			}
+		}	
+		.lds-dual-ring{
+			animation: lds-dual-ring 2s timing-function delay iteration-count direction fill-mode;
 		}
-		100% {
-		  transform: rotate(360deg);
-		}
-	      }*/
+	      */
