@@ -11,25 +11,24 @@
 }
 
 @mixin btn-push {
-	width: 110%;
 	min-width: 170px;
 	height: 3.3rem;
-	background: linear-gradient(170deg, rgba(255,121,218,.9), rgba(255,121,218,0) 90.71%),
-           	    linear-gradient(0deg, rgba(146,86,220,.9), rgba(146,86,220,.9));
+	padding: 1.2rem 1.5rem;
+	background: $btn-push;
 	color: $colour-font;
 	font-size: 1rem;
 	font-weight: 600;
 	border-radius: 5rem;
 	border: none;
 	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
-	transition: 0.2s;
+	transition: opacity 200ms 300ms, box-shadow 500ms;
+	
 	
 	&:hover{
 		opacity: 0.9;
 		box-shadow: 0rem 1.5rem 0.9rem $colour-shadow;
 	}
 }
-
 
 @mixin backgrimg{
 	display: flex;

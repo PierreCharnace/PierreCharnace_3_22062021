@@ -19,16 +19,9 @@
 	& > li{
 		display: flex;
 		justify-content: center;
-		width: 100%;
-
-		& form{
-			display: flex;
-			justify-content: center;
-			width: 96%;
-			max-width: 420px;
-		}
+		width: 96%;
+		max-width: 420px;
 	}
-
 	&__btn{
 		display: flex;
 		align-items: center;
@@ -42,10 +35,10 @@
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: $colour-background;
-		transition-duration: 0.2s;
+		transition: background-color 200ms 300ms, color 500ms;
 
 		&:focus{
-			background-color: rgba(146,86,220,.1);
+			background-color: $colour-primary-ope;
 		}
 
 		&:focus > .fa-button{
@@ -98,16 +91,25 @@
 }
 
 .fa-heart{
-			display: flex!important;
-			justify-content: center;
-			align-items: center;
-			width: 30%;
-			height: 50px;
-			font-size: 1.5rem;
-		}
+	display: flex!important;
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 30%;
+	height: 50px;
+	font-size: 1.5rem;
+	transition: color 0.1s ,font-weight 0.5s 0.5s;
+
+	&:active{
+		color: $btn-push;
+		font-weight: 600;
+	}
+	
+}
 
 
 h2 > span{
-		text-decoration: underline $colour-tertiary 3px;
-		text-underline-offset: 0.4em;
+	text-decoration: underline $colour-tertiary 3px;
+	text-underline-offset: 0.4em;
 }
