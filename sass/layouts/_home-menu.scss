@@ -63,6 +63,57 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 
+
+	&__box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	border-radius: 0 1rem 1rem 0;
+	background-color: $colour-tertiary;
+	transition: transform 1s 0.2s ease-in-out;
+
+		& > input{
+			display: flex;
+			width: 28%;
+			height: 28%;
+			color: $colour-tertiary;
+		
+		}
+
+		& > label{
+			display: flex;
+			position: absolute;
+			background-color: white;
+			border-radius: 100%;
+			width: 23px;
+			height: 23px;
+			transition: transform 1s 0.2s ease-out;
+		}
+
+	}
+	
+	&:hover  label{
+		transform: rotate(-360deg);
+	}
+
+	&:hover > .meal__box{
+		transform: translatex(-30px);
+	}
+
+
+	& > p{
+		display: block;
+		margin-top: 33px;
+		transition: transform 1s ease-in-out;
+	}
+
+	&:hover > p{
+		transform: translatex(-40px);
+	}
+
+	
+
 	&__recipe{
 		display: flex;
 		flex-wrap: wrap;
@@ -83,65 +134,11 @@
 	  	}
 	}
 
-	& > p{
-		display: block;
-		margin-top: 33px;
-		transition: transform 2s;
-
-		&:hover{
-				transform: translatex(-60px)
-			}
-	}
-
-
 	& span{	
 		align-items: center;
 		width: 10%;
 		margin: 20px 0 0 10px;
 		font-weight: 500;
-	}
-}
-
-.you{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 60px;
-	border-radius: 0 1rem 1rem 0;
-	background-color: $colour-tertiary;
-	/*visibility: hidden;*/
-	transition: transform 2s;
-
-	&:hover ~ p {
-		transform: translatex(-60px)
-
-	}
-
-	&:hover{
-		visibility: visible;
-		transform: translatex(-60px);
-	}
-
-	& > input{
-		display: flex;
-		width: 28%;
-		height: 28%;
-		
-		
-		
-	}
-
-	& > label{
-		display: flex;
-		position: absolute;
-		background-color: white;
-		border-radius: 100%;
-		width: 23px;
-		height: 23px;
-		
-		&::after{
-			background-color: red;
-		}
 	}
 }
 
