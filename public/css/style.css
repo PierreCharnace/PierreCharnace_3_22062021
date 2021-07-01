@@ -447,6 +447,12 @@ footer li {
   background-color: #99E2D0;
   transition: transform 0.8s ease;
 }
+.meal i {
+  position: relative;
+  left: 90%;
+  bottom: 50%;
+  z-index: 1;
+}
 .meal:hover {
   overflow: visible 0;
 }
