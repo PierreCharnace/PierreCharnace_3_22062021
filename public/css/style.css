@@ -8,6 +8,16 @@
 	height: 23px;
 	transition: transform 0.2s 0.2s ease;
 }*/
+/*&::after{
+		content: "";
+		position: relative;
+		bottom: 50%;
+
+		height: 20px;
+		width: 20px;
+		border-radius: 100%;
+		background-color: blue;
+	}*/
 @keyframes appear {
   from {
     visibility: hidden;
@@ -399,17 +409,22 @@ footer li {
   font-family: "Shrikhand";
   font-size: 115%;
 }
-.menu > h2 {
+.menu h2 {
   font-weight: 300;
 }
 
+.entree {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .meal {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
   max-width: 400px;
-  height: 55px;
+  height: 60px;
   font-size: 0.9rem;
   padding: 0 0 0.5rem 0;
   margin: 0.5rem 0 0.5rem 0;
@@ -427,13 +442,13 @@ footer li {
   justify-content: center;
   align-items: center;
   height: 115%;
-  width: 16%;
+  width: 20%;
   border-radius: 0 1rem 1rem 0;
   background-color: #99E2D0;
   transition: transform 0.8s ease;
 }
 .meal:hover {
-  overflow: visible;
+  overflow: visible 0;
 }
 .meal:hover::after {
   transform: translatex(-90%);
@@ -445,19 +460,38 @@ footer li {
   width: 75%;
   padding-left: 0.8rem;
   font-size: 0.9rem;
+  transition: width 0.5s;
 }
 .meal__recipe h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 250px;
+  transition: width 0.7s;
   font-weight: 500;
 }
 .meal__recipe > p {
-  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 250px;
+  transition: width 0.7s;
   font-weight: 300;
   margin: 0;
 }
+.meal:hover h3 {
+  text-overflow: ellipsis;
+  width: 210px;
+}
+.meal:hover p {
+  text-overflow: ellipsis;
+  width: 210px;
+}
 .meal span {
   align-items: center;
-  width: 10%;
-  margin: 34px 0 0 10px;
+  width: 15%;
+  background-color: white;
+  margin: 38px 0 0 10px;
   font-weight: 500;
   transition: transform 0.7s 0.1s ease;
 }
