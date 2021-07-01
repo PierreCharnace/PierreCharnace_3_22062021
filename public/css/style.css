@@ -1,4 +1,13 @@
 @charset "UTF-8";
+/*& > label{
+	display: flex;
+	position: absolute;
+	background-color: white;
+	border-radius: 100%;
+	width: 23px;
+	height: 23px;
+	transition: transform 0.2s 0.2s ease;
+}*/
 @keyframes appear {
   from {
     visibility: hidden;
@@ -395,6 +404,7 @@ footer li {
 }
 
 .meal {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -406,44 +416,27 @@ footer li {
   background-color: white;
   box-shadow: 0 0.3rem 0.9rem lightgrey;
   border-radius: 1rem;
+  overflow: hidden;
 }
-.meal__box {
+.meal::after {
+  content: "";
+  position: relative;
+  bottom: 100%;
+  left: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
+  height: 115%;
+  width: 16%;
   border-radius: 0 1rem 1rem 0;
   background-color: #99E2D0;
-  transition: transform 1s 0.2s ease-in-out;
+  transition: transform 0.8s ease;
 }
-.meal__box > input {
-  display: flex;
-  width: 28%;
-  height: 28%;
-  color: #99E2D0;
+.meal:hover {
+  overflow: visible;
 }
-.meal__box > label {
-  display: flex;
-  position: absolute;
-  background-color: white;
-  border-radius: 100%;
-  width: 23px;
-  height: 23px;
-  transition: transform 1s 0.2s ease-out;
-}
-.meal:hover label {
-  transform: rotate(-360deg);
-}
-.meal:hover > .meal__box {
-  transform: translatex(-30px);
-}
-.meal > p {
-  display: block;
-  margin-top: 33px;
-  transition: transform 1s ease-in-out;
-}
-.meal:hover > p {
-  transform: translatex(-40px);
+.meal:hover::after {
+  transform: translatex(-90%);
 }
 .meal__recipe {
   display: flex;
@@ -464,8 +457,12 @@ footer li {
 .meal span {
   align-items: center;
   width: 10%;
-  margin: 20px 0 0 10px;
+  margin: 34px 0 0 10px;
   font-weight: 500;
+  transition: transform 0.7s 0.1s ease;
+}
+.meal:hover > span {
+  transform: translatex(-40px);
 }
 
 .reserve {

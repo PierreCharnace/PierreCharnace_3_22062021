@@ -51,6 +51,7 @@
 
 
 .meal{
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	width: 90%;
@@ -62,57 +63,30 @@
 	background-color: white;
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
-
-
-	&__box{
+	overflow: hidden;
+	
+	&::after{
+	content: "";
+	position: relative;
+	bottom: 100%;
+	left: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60px;
+	height: 115%;
+	width: 16%;
 	border-radius: 0 1rem 1rem 0;
 	background-color: $colour-tertiary;
-	transition: transform 1s 0.2s ease-in-out;
+	transition: transform 0.8s ease;
+	}
 
-		& > input{
-			display: flex;
-			width: 28%;
-			height: 28%;
-			color: $colour-tertiary;
-		
+	&:hover{
+		overflow: visible;
+
+		&::after{
+			transform: translatex(-90%);
 		}
-
-		& > label{
-			display: flex;
-			position: absolute;
-			background-color: white;
-			border-radius: 100%;
-			width: 23px;
-			height: 23px;
-			transition: transform 1s 0.2s ease-out;
-		}
-
 	}
-	
-	&:hover  label{
-		transform: rotate(-360deg);
-	}
-
-	&:hover > .meal__box{
-		transform: translatex(-30px);
-	}
-
-
-	& > p{
-		display: block;
-		margin-top: 33px;
-		transition: transform 1s ease-in-out;
-	}
-
-	&:hover > p{
-		transform: translatex(-40px);
-	}
-
-	
 
 	&__recipe{
 		display: flex;
@@ -122,7 +96,6 @@
 		padding-left: 0.8rem;
 		font-size: 0.9rem;
 	
-
 		& h3{
 			font-weight: 500;
 		}
@@ -137,8 +110,13 @@
 	& span{	
 		align-items: center;
 		width: 10%;
-		margin: 20px 0 0 10px;
+		margin: 34px 0 0 10px;
 		font-weight: 500;
+		transition: transform 0.7s 0.1s ease;
+	}
+
+	&:hover > span{
+		transform: translatex(-40px);
 	}
 }
 
