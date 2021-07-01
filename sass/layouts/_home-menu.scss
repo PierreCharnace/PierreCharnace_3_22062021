@@ -84,10 +84,16 @@
 	}
 
 	& i{
+		background-color: white;
+		width:19px;
+		height: 19px;
+		border-radius: 100%;
+		font-size:1.2rem;
 		position: relative;
 		left: 90%;
-		bottom: 50%;
+		bottom: 55%;
 		z-index: 1;
+
 	}
 
 		&:hover{
