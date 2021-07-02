@@ -8,16 +8,6 @@
 	height: 23px;
 	transition: transform 0.2s 0.2s ease;
 }*/
-/*&::after{
-		content: "";
-		position: relative;
-		bottom: 50%;
-
-		height: 20px;
-		width: 20px;
-		border-radius: 100%;
-		background-color: blue;
-	}*/
 @keyframes appear {
   from {
     visibility: hidden;
@@ -202,25 +192,39 @@ body {
   box-shadow: 0rem 1.5rem 0.9rem lightgrey;
 }
 
-.fa-heart {
+.full {
   display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: #FF79DA;
+  left: 19%;
+  width: 29.8%;
+  height: 50px;
+  font-size: 1.5rem;
+  transform: scale(1);
+  transition: transform 1.5s ease;
+}
+
+h1 + .empty {
+  display: flex !important;
+  position: relative;
+  left: 18.9%;
   font-weight: 500;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 30%;
   height: 50px;
   font-size: 1.5rem;
-  transition: color 0.1s, font-weight 0.5s 0.5s;
+  transition: transform 1s ease;
+  z-index: 1;
 }
-.fa-heart:active {
-  color: linear-gradient(170deg, rgba(255, 121, 218, 0.9), rgba(255, 121, 218, 0) 90.71%), linear-gradient(0deg, rgba(146, 86, 220, 0.9), rgba(146, 86, 220, 0.9));
-  font-weight: 600;
+h1 + .empty:hover + .full {
+  transform: scale(1);
 }
 
 h2 > span {
-  text-decoration: underline #99E2D0 3px;
-  text-underline-offset: 0.4em;
+  border-bottom: #99E2D0 3px solid;
+  padding-bottom: 4px;
 }
 
 .restaurant__card {
@@ -257,6 +261,13 @@ h2 > span {
   object-fit: cover;
 }
 
+figcaption > .empty {
+  position: relative;
+  left: 27%;
+  bottom: 10%;
+  background-color: green;
+}
+
 .form {
   display: flex;
   justify-content: center;
@@ -267,7 +278,7 @@ h2 > span {
 }
 .form__in {
   width: 100%;
-  border: #ebebeb;
+  border: none;
   background-color: #ebebeb;
   font-size: 1.05em;
 }
@@ -393,7 +404,7 @@ footer li {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 250px 0 45px 0;
+  margin: 250px 0 20px 0;
   border-radius: 2em 2em 0 0;
   background-color: #f5f5f5;
   font-size: 1rem;
@@ -413,10 +424,14 @@ footer li {
   font-weight: 300;
 }
 
-.entree {
+.entree, .main-course, .dessert {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.dessert {
+  margin-bottom: 45px;
 }
 
 .meal {
@@ -437,32 +452,37 @@ footer li {
   content: "";
   position: relative;
   bottom: 100%;
-  left: 100%;
+  left: 94.5%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 115%;
-  width: 20%;
+  width: 65px;
   border-radius: 0 1rem 1rem 0;
   background-color: #99E2D0;
   transition: transform 0.8s ease;
 }
 .meal i {
-  background-color: white;
-  width: 19px;
-  height: 19px;
-  border-radius: 100%;
-  font-size: 1.2rem;
   position: relative;
-  left: 90%;
+  left: 108%;
   bottom: 55%;
   z-index: 1;
+  width: 22px;
+  height: 21px;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 1.4rem;
+  color: #99E2D0;
+  transition: transform 0.8s ease, transform 0.8s ease;
+}
+.meal:hover > i {
+  transform: translateX(-320%) rotate(720deg);
 }
 .meal:hover {
-  overflow: visible 0;
+  overflow: clip;
 }
 .meal:hover::after {
-  transform: translatex(-90%);
+  transform: translatex(-100%);
 }
 .meal__recipe {
   display: flex;

@@ -5,11 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
 		<title>Ohmyfood</title>
 		<link rel="shortcut icon" href="public/logo/ohmyfood.png" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="public/css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="public/css/style.css" />	
+			
 		<script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>	
 	</head>
 	<body>
@@ -27,13 +28,14 @@
 			</header>
 			<section class="block-main--alafrancaise">
 				<div class="menu">
-						<div class ="menu__title">
-							<h1>À la française </h1>
-							<i class="far fa-heart"></i>
-						</div>
+					<div class ="menu__title">
+						<h1>À la française </h1>
+						<i class="far fa-heart empty"></i>
+						<i class="fas fa-heart full"></i>
+					</div>
 				
 					<div class="entree">
-						<h2><span>ENTR</span>ÉES</h2>
+						<h2><span>ENTR</span>ÉES</h2>					
 						<div class="meal">
 							<div class="meal__recipe">
 								<h3>Tartare de poulpe acidulé</h3>
@@ -48,6 +50,7 @@
 								<p>Carotte, panais, topinambour</p>							
 							</div>
 							<span> 35€</span>
+							<i class="far fa-check-circle"></i>
 						</div>
 						<div class="meal">
 							<div class="meal__recipe">
@@ -55,15 +58,19 @@
 								<p>Revisitée</p>		
 							</div>
 							<span> 20€</span>
+							<i class="far fa-check-circle"></i>
 						</div>	
-					</div>				
-						<h2><span>PLAT</span>S</h2>		<!--next-->
-						<div class="meal" type="button">
+					</div>	
+					<div class="main-course">			
+						<h2><span>PLAT</span>S</h2>
+							<!--next-->
+						<div class="meal">
 							<div class="meal__recipe">
 								<h3>Coquilles Saint-Jacques</h3>
 								<p>Accompagnée d'une purée de panais</p>	
 							</div>
-							<span>40€</span>		
+							<span>40€</span>	
+							<i class="far fa-check-circle"></i>	
 						</div>	
 						<div class="meal">
 							<div class="meal__recipe">
@@ -71,14 +78,18 @@
 								<p>Et parmentier de pomme de terre</p>
 							</div>
 							<span> 35€</span>
+							<i class="far fa-check-circle"></i>
 						</div>
 						<div class="meal">
 							<div class="meal__recipe">
 								<h3>Pigeonneau d'Ille-et-Vilaine</h3>
 								<p>Sur son lit de gnocchis aux légumes</p>
 							</div>
-							<span> 44€</span>	
-						</div>								
+							<span> 44€</span>
+							<i class="far fa-check-circle"></i>	
+						</div>	
+					</div>		
+					<div class="dessert">						
 						<h2><span>DESS</span>ERTS</h2>
 						<div class="meal">
 							<div class="meal__recipe">
@@ -86,6 +97,7 @@
 								<p>Et purée de noisettes</p>
 							</div>
 							<span> 18€</span>
+							<i class="far fa-check-circle"></i>
 						</div>	
 						<div class="meal">
 							<div class="meal__recipe">
@@ -93,6 +105,7 @@
 								<p>Revisité</p>
 							</div>
 							<span> 22€</span>
+							<i class="far fa-check-circle"></i>
 						</div>	
 						<div class="meal">
 							<div class="meal__recipe">
@@ -100,12 +113,11 @@
 								<p>Myrtilles et pâte d'amande</p>
 							</div>
 							<span>23€</span>
-						</div>		
-						</div>
-					
-				
-					<button class="btn-push" type="button">Commander</button>
-				
+							<i class="far fa-check-circle"></i>
+						</div>	
+					</div>	
+				</div>
+					<button class="btn-push" type="button">Commander</button>		
 			</section>
 
 			<footer>

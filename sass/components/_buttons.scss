@@ -90,26 +90,37 @@
 	margin-bottom: 60px;
 }
 
-.fa-heart{
+.full{
 	display: flex!important;
+	justify-content: center;
+	align-items: center;
+	color: $colour-secondary;
+	left: 19%;
+	width: 29.8%;
+	height: 50px;
+	font-size: 1.5rem;
+	transform: scale(1);
+	transition: transform 1.5s ease;
+}
+
+h1 + .empty{
+	display: flex!important;
+	position: relative;
+	left: 18.9%;
 	font-weight: 500;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 	width: 30%;
 	height: 50px;
 	font-size: 1.5rem;
-	transition: color 0.1s ,font-weight 0.5s 0.5s;
+	transition: transform 1s ease;
+	z-index: 1;
 
-	&:active{
-		color: $btn-push;
-		font-weight: 600;
+	&:hover + .full{
+		transform: scale(1);
 	}
-	
 }
-
-
 h2 > span{
-	text-decoration: underline $colour-tertiary 3px;
-	text-underline-offset: 0.4em;
+	border-bottom: $colour-tertiary 3px solid;
+	padding-bottom: 4px;
 }
