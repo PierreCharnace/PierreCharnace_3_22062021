@@ -56,6 +56,7 @@
 		border-radius: 100%;
 		color: white;
 		background-color: $colour-primary;
+		font-family: "Roboto", sans-serif;
 	}
 
 	.fa-button{
@@ -90,36 +91,36 @@
 	margin-bottom: 60px;
 }
 
-.full{
-	display: flex!important;
+.menu__title .full{
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: $colour-secondary;
-	left: 19%;
 	width: 29.8%;
 	height: 50px;
 	font-size: 1.5rem;
-	transform: scale(1);
-	transition: transform 1.5s ease;
+	transform: scale(0);
+	transition: transform 1s ease;
+	
 }
 
-h1 + .empty{
-	display: flex!important;
-	position: relative;
-	left: 18.9%;
-	font-weight: 500;
+.menu__title .empty{
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 30%;
+	position: relative;
+	z-index: 1;
+	left: 18.8%;
+	width: 29.8%;
 	height: 50px;
 	font-size: 1.5rem;
 	transition: transform 1s ease;
-	z-index: 1;
 
 	&:hover + .full{
 		transform: scale(1);
 	}
 }
+
 h2 > span{
 	border-bottom: $colour-tertiary 3px solid;
 	padding-bottom: 4px;
