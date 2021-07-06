@@ -37,11 +37,11 @@
 			/*************heart-index*****************/
 
 	.full-index{
-		background-color: white;
+		
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: url(/public/img/background-heart.png);
+		background-image: url(/public/img/hearto4.png);
 		margin-right: 20px;
 		height: 50px;
 		width: 60px;
@@ -56,16 +56,16 @@
 			right: 0.5px;
 			width: 60px;
 			height: 50px;
-			font-size: 1.2rem;
-			color: white;
+			font-size: 1.6rem;
+			opacity: 1;
+			background-color: white;
 		}
 
 		&:hover{
 			
 			&::before{
-				
-				transition: color 1s ease-out;
-				color: $colour-secondary;
+				opacity: 0;
+				transition: opacity 1s ease-out;
 			}
 			
 		} 
