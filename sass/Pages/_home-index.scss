@@ -11,7 +11,8 @@
 	}
 
 	.operation{
-		@include background-section;	
+		@include background-section;
+		background-color: white;	
 	}
 
 	.restaurant{
@@ -33,4 +34,40 @@
 	}
 
 
+			/*************heart-index*****************/
+
+	.full-index{
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url(/public/img/background-heart.png);
+		margin-right: 20px;
+		height: 50px;
+		width: 60px;
+		font-size: 1.5rem;
+
+		&::before{
+			display: flex;
+			justify-content: center;
+			align-items: center;	
+			position: relative;
+			bottom: 1px;
+			right: 0.5px;
+			width: 60px;
+			height: 50px;
+			font-size: 1.2rem;
+			color: white;
+		}
+
+		&:hover{
+			
+			&::before{
+				
+				transition: color 1s ease-out;
+				color: $colour-secondary;
+			}
+			
+		} 
+	}
 	

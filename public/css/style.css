@@ -184,39 +184,12 @@ body {
   box-shadow: 0rem 1.5rem 0.9rem lightgrey;
 }
 
-.menu__title .full {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FF79DA;
-  width: 29.8%;
-  height: 50px;
-  font-size: 1.5rem;
-  transform: scale(0);
-  transition: transform 1s ease;
-}
-
-.menu__title .empty {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  left: 18.8%;
-  width: 29.8%;
-  height: 50px;
-  font-size: 1.5rem;
-  transition: transform 1s ease;
-}
-.menu__title .empty:hover + .full {
-  transform: scale(1);
-}
-
 h2 > span {
   border-bottom: #99E2D0 3px solid;
   padding-bottom: 4px;
 }
 
+/***************cards************/
 .restaurant__card {
   position: relative;
   width: 90%;
@@ -253,54 +226,6 @@ h2 > span {
   object-fit: cover;
 }
 
-/*figcaption .full-index{
-
-	position: relative;
-	color: $colour-secondary;
-	width: 15%;
-	height: 50px;
-	/*margin-right: 8px;
-	font-size: 1.22rem;
-	transform: scale(1);
-	transition: transform 1s ease;
-}*/
-.fa-heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-  font-size: 1.5rem;
-  border-radius: 10% 10% 100% 100%;
-  width: 30px;
-  height: 30px;
-}
-
-.fa-heart::before {
-  border-radius: 60%;
-  transition: bold 1s ease-out;
-}
-
-.fa-heart:hover::before {
-  font-weight: bold;
-}
-
-/*figcaption .empty{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	right: -15.9%;	
-
-	height: 50px;
-	font-size: 1.5rem;
-
-	transform: scale(1);
-
-	&:hover{
-		transform: scale(1);
-	}
-}*/
 .form {
   display: flex;
   justify-content: center;
@@ -325,6 +250,7 @@ h2 > span {
 }
 
 header {
+  background-color: white;
   width: 100%;
   padding: 5% 0 3% 0;
 }
@@ -392,13 +318,13 @@ footer li {
   padding-right: 1.1rem;
 }
 
+/***********home-menu**********************/
 .block-main--ledelicedessens {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f5f5f5 !important;
-  background-size: 100% 21%, cover !important;
-  background-repeat: no-repeat !important;
+  background-size: 100% 21%, cover;
+  background-repeat: no-repeat;
   background-image: url(/public/img/img_le_delice_des_sens.jpg);
 }
 
@@ -406,30 +332,32 @@ footer li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f5f5f5 !important;
-  background-size: 100% 21%, cover !important;
-  background-repeat: no-repeat !important;
-  background: url(/public/img/img_a_la_francaise.jpg);
+  background-size: 100% 21%, cover;
+  background-repeat: no-repeat;
+  background-image: url(/public/img/img_a_la_francaise.jpg);
 }
 
 .block-main--lanoteenchantee {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f5f5f5 !important;
-  background-size: 100% 21%, cover !important;
-  background-repeat: no-repeat !important;
+  background-size: 100% 21%, cover;
+  background-repeat: no-repeat;
   background-image: url(/public/img/img_la_note_enchantée.jpg);
+  background-size: 100% 30%, cover;
 }
 
 .block-main--lapalettedugout {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f5f5f5 !important;
-  background-size: 100% 21%, cover !important;
-  background-repeat: no-repeat !important;
-  background: url(/public/img/img_la_palette_du_gout.jpg);
+  background-size: 100% 21%, cover;
+  background-repeat: no-repeat;
+  background-image: url(/public/img/img_la_palette_du_gout.jpg);
+}
+
+#block-page {
+  background-color: #f5f5f5;
 }
 
 .menu {
@@ -470,6 +398,7 @@ footer li {
 .meal {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   width: 90%;
   max-width: 400px;
   height: 60px;
@@ -481,27 +410,13 @@ footer li {
   border-radius: 1rem;
   overflow: hidden;
 }
-.meal::after {
-  content: "";
-  position: relative;
-  bottom: 100%;
-  left: 94.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 115%;
-  width: 65px;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99E2D0;
-  transition: transform 0.8s ease;
-}
 .meal i {
   position: relative;
   left: 108%;
+  max-width: 30px;
   bottom: 55%;
   width: 22px;
   height: 21px;
-  z-index: 1;
   background-color: white;
   border-radius: 100%;
   font-size: 1.4rem;
@@ -511,10 +426,10 @@ footer li {
 .meal:hover > i {
   transform: translateX(-320%) rotate(720deg);
 }
-.meal:hover {
+.meal__recipe:hover {
   overflow: clip;
 }
-.meal:hover::after {
+.meal__recipe:hover::after {
   transform: translatex(-100%);
 }
 .meal__recipe {
@@ -543,6 +458,20 @@ footer li {
   font-weight: 300;
   margin: 0;
 }
+.meal__recipe::after {
+  content: "";
+  position: relative;
+  bottom: 75%;
+  left: 129.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115%;
+  width: 65px;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99E2D0;
+  transition: transform 0.8s ease;
+}
 .meal:hover h3 {
   text-overflow: ellipsis;
   width: 210px;
@@ -563,6 +492,71 @@ footer li {
   transform: translatex(-40px);
 }
 
+/**************heart-menu************************/
+.menu__title .full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/public/img/heart-grey3.png);
+  margin-right: 20px;
+  height: 50px;
+  width: 60px;
+  font-size: 1.5rem;
+}
+
+.full {
+  background-color: #f5f5f5;
+}
+.full::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2.5px;
+  left: 5px;
+  width: 60px;
+  height: 50px;
+  font-size: 1.3rem;
+  color: #f5f5f5;
+}
+.full:hover::before {
+  transition: -webkit-background-clip 1s ease-out;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*.lds-dual-ring {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: rgba($colour-background, $alpha: 0.5);
+	      }
+	      .lds-dual-ring:after {
+		content: "";
+		display: block;
+		width: 80px;
+		height: 80px;
+		position: relative;
+		left: 35%;
+		top: 20%;
+		border-radius: 50%;
+		border: 6px solid $colour-primary;
+		border-color: $colour-primary transparent $colour-primary transparent;
+		animation: lds-dual-ring 2s  linear infinite;
+	      }
+	      @keyframes lds-dual-ring {
+			0% {
+			transform: rotate(0deg);
+			}
+			100% {
+			transform: rotate(360deg);
+			}
+		}	
+		.lds-dual-ring{
+			animation: lds-dual-ring 2s timing-function delay iteration-count direction fill-mode;
+		}*/
 .reserve {
   display: flex;
   justify-content: center;
@@ -581,6 +575,7 @@ footer li {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  background-color: white;
 }
 
 .restaurant {
@@ -601,6 +596,35 @@ footer li {
   width: 100%;
   height: 100%;
   padding: 10px 0% 0 26%;
+}
+
+/*************heart-index*****************/
+.full-index {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/public/img/background-heart.png);
+  margin-right: 20px;
+  height: 50px;
+  width: 60px;
+  font-size: 1.5rem;
+}
+.full-index::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 1px;
+  right: 0.5px;
+  width: 60px;
+  height: 50px;
+  font-size: 1.2rem;
+  color: white;
+}
+.full-index:hover::before {
+  transition: color 1s ease-out;
+  color: #FF79DA;
 }
 
 /*# sourceMappingURL=style.css.map */

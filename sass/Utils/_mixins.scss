@@ -34,9 +34,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: $colour-background!important;
-	background-size: 100% 21%, cover!important;
-	background-repeat: no-repeat!important;
+	background-size:100% 21%, cover;
+	background-repeat: no-repeat;
 }
 
 @mixin ellipsis-recipe {

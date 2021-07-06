@@ -91,36 +91,6 @@
 	margin-bottom: 60px;
 }
 
-.menu__title .full{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: $colour-secondary;
-	width: 29.8%;
-	height: 50px;
-	font-size: 1.5rem;
-	transform: scale(0);
-	transition: transform 1s ease;
-	
-}
-
-.menu__title .empty{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	left: 18.8%;
-	width: 29.8%;
-	height: 50px;
-	font-size: 1.5rem;
-	transition: transform 1s ease;
-
-	&:hover + .full{
-		transform: scale(1);
-	}
-}
-
 h2 > span{
 	border-bottom: $colour-tertiary 3px solid;
 	padding-bottom: 4px;

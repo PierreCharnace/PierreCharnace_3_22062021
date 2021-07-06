@@ -1,3 +1,4 @@
+		/***************cards************/
 .restaurant{
 
 
@@ -42,54 +43,3 @@
 		}
 	}
 }
-
-/*figcaption .full-index{
-	
-	position: relative;
-	color: $colour-secondary;
-	width: 15%;
-	height: 50px;
-	/*margin-right: 8px;
-	font-size: 1.22rem;
-	transform: scale(1);
-	transition: transform 1s ease;
-}*/
-
-.fa-heart {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 20px;
-	font-size: 1.5rem;
-  	border-radius: 10% 10% 100% 100%;
-	width: 30px; 
-	height: 30px;
-    
-}
-.fa-heart::before {
-	border-radius: 60%;
-	transition: bold 1s ease-out;
-}
-.fa-heart:hover::before{
-	font-weight: bold;
-   	
-  
-}
-
-/*figcaption .empty{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 1;
-	right: -15.9%;	
-	
-	height: 50px;
-	font-size: 1.5rem;
-	
-	transform: scale(1);
-
-	&:hover{
-		transform: scale(1);
-	}
-}*/
