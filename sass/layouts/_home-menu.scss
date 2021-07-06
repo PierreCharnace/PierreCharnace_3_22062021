@@ -55,6 +55,24 @@
 	}
 }
 
+.entree{
+	animation: fadein 0.2s;
+	-webkit-animation: fadein 2s;
+}
+
+.main-course{
+	animation: fadein 0.2s;
+	-webkit-animation: fadein 2s;
+}
+
+.dessert{
+	animation: fadein 0.2s;
+	-webkit-animation: fadein 2s;
+}
+
+
+
+
 .entree, .main-course, .dessert {
 	display: flex;
 	flex-wrap: wrap;
@@ -80,7 +98,21 @@
 	border-radius: 1rem;
 	overflow: hidden;
 	
-	
+	&::after{
+		content: "";
+		position: relative;
+		bottom: 100%;
+		left: 94.5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 115%;
+		width: 65px;
+		border-radius: 0 1rem 1rem 0;
+		background-color: $colour-tertiary;
+		transition: transform 0.8s ease;
+	}
+
 	& i{
 		position: relative;
 		left: 108%;
@@ -88,6 +120,7 @@
 		bottom: 55%;
 		width: 22px;
 		height: 21px;
+		z-index: 1;
 		background-color: white;
 		border-radius: 100%;
 		font-size:1.4rem;
@@ -99,7 +132,7 @@
 		transform: translateX(-320%) rotate(720deg);
 	}
 
-	&__recipe:hover{
+	&:hover{
 		overflow: clip;
 
 		&::after{
@@ -126,23 +159,6 @@
 			font-weight: 300;
 			margin: 0;
 	  	}
-
-
-		&::after{
-		content: "";
-		position: relative;
-		bottom: 75%;
-		left: 129.5%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 115%;
-		width: 65px;
-		border-radius: 0 1rem 1rem 0;
-		background-color: $colour-tertiary;
-		transition: transform 0.8s ease;
-	}
-
 
 	}
 
@@ -192,18 +208,19 @@
 			align-items: center;
 			position: relative;
 			top: 2.5px;
-			left: 5px;
-			width: 60px;
-			height: 50px;
+			left: 9px;
+			width: 30px;
+			height: 30px;
 			font-size: 1.3rem;
-			color: $colour-background;
+			opacity: 0;
 		}
 
 		&:hover{
 			
 			&::before{
 				
-				transition: -webkit-background-clip 1s ease-out;
+				transition: opacity 1.5s ease-out;
+				opacity: 1;
 				background: -webkit-linear-gradient($colour-primary, $colour-secondary);
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;

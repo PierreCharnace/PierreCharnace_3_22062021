@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@keyframes appear {
+@keyframes fadein {
   from {
-    visibility: hidden;
+    opacity: 0;
   }
   to {
-    visibility: visible;
+    opacity: 1;
   }
 }
 /*.lds-dual-ring {
@@ -385,6 +385,21 @@ footer li {
   font-weight: 300;
 }
 
+.entree {
+  animation: fadein 0.2s;
+  -webkit-animation: fadein 2s;
+}
+
+.main-course {
+  animation: fadein 0.2s;
+  -webkit-animation: fadein 2s;
+}
+
+.dessert {
+  animation: fadein 0.2s;
+  -webkit-animation: fadein 2s;
+}
+
 .entree, .main-course, .dessert {
   display: flex;
   flex-wrap: wrap;
@@ -410,6 +425,20 @@ footer li {
   border-radius: 1rem;
   overflow: hidden;
 }
+.meal::after {
+  content: "";
+  position: relative;
+  bottom: 100%;
+  left: 94.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 115%;
+  width: 65px;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99E2D0;
+  transition: transform 0.8s ease;
+}
 .meal i {
   position: relative;
   left: 108%;
@@ -417,6 +446,7 @@ footer li {
   bottom: 55%;
   width: 22px;
   height: 21px;
+  z-index: 1;
   background-color: white;
   border-radius: 100%;
   font-size: 1.4rem;
@@ -426,10 +456,10 @@ footer li {
 .meal:hover > i {
   transform: translateX(-320%) rotate(720deg);
 }
-.meal__recipe:hover {
+.meal:hover {
   overflow: clip;
 }
-.meal__recipe:hover::after {
+.meal:hover::after {
   transform: translatex(-100%);
 }
 .meal__recipe {
@@ -457,20 +487,6 @@ footer li {
   transition: width 0.7s;
   font-weight: 300;
   margin: 0;
-}
-.meal__recipe::after {
-  content: "";
-  position: relative;
-  bottom: 75%;
-  left: 129.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 115%;
-  width: 65px;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99E2D0;
-  transition: transform 0.8s ease;
 }
 .meal:hover h3 {
   text-overflow: ellipsis;
@@ -513,14 +529,15 @@ footer li {
   align-items: center;
   position: relative;
   top: 2.5px;
-  left: 5px;
-  width: 60px;
-  height: 50px;
+  left: 9px;
+  width: 30px;
+  height: 30px;
   font-size: 1.3rem;
-  color: #f5f5f5;
+  opacity: 0;
 }
 .full:hover::before {
-  transition: -webkit-background-clip 1s ease-out;
+  transition: opacity 1.5s ease-out;
+  opacity: 1;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
