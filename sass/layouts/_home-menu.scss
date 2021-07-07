@@ -1,23 +1,23 @@
 				/***********home-menu**********************/
 .block-main--ledelicedessens{
 	@include backgrimg;
-	background-image: url(/public/img/img_le_delice_des_sens.jpg);
+	background-image: url('/public/img/img_le_delice_des_sens.jpg');
 }
 
 .block-main--alafrancaise{
 	@include backgrimg;
-	background-image: url(/public/img/img_a_la_francaise.jpg);
+	background-image: url('/public/img/img_a_la_francaise.jpg');
 }
 
 .block-main--lanoteenchantee{
 	@include backgrimg;
-	background-image: url(/public/img/img_la_note_enchantée.jpg);
+	background-image: url('/public/img/img_la_note_enchantée.jpg');
 	background-size:100% 30%, cover;
 }
 
 .block-main--lapalettedugout{
 	@include backgrimg;
-	background-image: url(/public/img/img_la_palette_du_gout.jpg);
+	background-image: url('/public/img/img_la_palette_du_gout.jpg');
 }
 
 #block-page{
@@ -56,18 +56,15 @@
 }
 
 .entree{
-	animation: fadein 0.2s;
-	-webkit-animation: fadein 2s;
+	animation: fadein 1s;
 }
 
 .main-course{
-	animation: fadein 0.2s;
-	-webkit-animation: fadein 2s;
+	animation: fadein 2s;
 }
 
 .dessert{
-	animation: fadein 0.2s;
-	-webkit-animation: fadein 2s;
+	animation: fadein 3s;;
 }
 
 
