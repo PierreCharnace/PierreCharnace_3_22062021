@@ -38,16 +38,19 @@
 
 	.full-index{
 		
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-image: url('/public/img/hearto4.png');
+		background-image: url(/public/img/hearto4.png);
 		margin-right: 20px;
 		height: 50px;
 		width: 60px;
 		font-size: 1.5rem;
+		cursor: wait;
 
 		&::before{
+			pointer-events: none;
 			display: flex;
 			justify-content: center;
 			align-items: center;	
@@ -59,13 +62,14 @@
 			font-size: 1.6rem;
 			opacity: 1;
 			background-color: white;
+			cursor: wait;
 		}
 
 		&:hover{
 			
 			&::before{
 				opacity: 0;
-				transition: opacity 1s ease-out;
+				transition: opacity 0.2s ease-out;
 			}
 			
 		} 

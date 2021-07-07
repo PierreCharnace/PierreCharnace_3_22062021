@@ -3,7 +3,7 @@
 
 
 	&__card{
-		position: relative;
+		
 		@include element-width-mobile;
 		height: 250px;
 		border-radius: 1em;
@@ -19,6 +19,7 @@
 		}
 		
 		& figcaption{
+			position: relative;
 			display: flex;		
 			justify-content: space-between;
 

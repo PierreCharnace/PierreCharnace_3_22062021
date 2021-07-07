@@ -56,7 +56,7 @@
 }
 
 .entree{
-	animation: fadein 1s;
+	animation: fadein 1s ;
 }
 
 .main-course{
@@ -94,6 +94,7 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 	overflow: hidden;
+	animation: fadein-meal 2s;
 	
 	&::after{
 		content: "";
@@ -215,7 +216,7 @@
 		&:hover{
 			
 			&::before{
-				
+				cursor: wait;
 				transition: opacity 1.5s ease-out;
 				opacity: 0;
 			}
