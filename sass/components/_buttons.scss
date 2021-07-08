@@ -89,6 +89,10 @@
 .btn-push{
 	@include btn-push;
 	margin-bottom: 60px;
+
+	& .fa-tasks{
+		display: none;
+	}
 }
 
 h2 > span{

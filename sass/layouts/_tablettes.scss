@@ -1,0 +1,111 @@
+		/************index-pages*****************/
+
+@media (min-width: 600px) and (max-width: 850px){
+
+	.reserve__text{
+		width: 55%!important;
+		margin-top: 30px;
+	}
+
+
+	.btn-push{
+		margin: 70px 0 0 10px;
+	}
+
+	.operation{
+		justify-content: initial;
+		flex-wrap: initial;
+		
+		& h2{
+			width: 40%;
+			margin: 135px 0 0 30px;
+		}
+	}
+
+	.restaurant {
+		justify-content: space-evenly;
+
+		& h2{
+			width: 100%;
+			max-width: 100%;
+			margin: 0 0px 20px 30px;
+		}
+
+		&__card{
+			width: 46%;
+		}
+	}
+
+	footer{
+
+		& a{
+			max-width: 50%;
+		}
+
+		& img{
+			width: 100%;
+
+		}
+		& > ul{
+			display: flex;
+			align-items: center;
+			width: 95%;
+			max-width: initial;
+			
+
+		& li{
+			width: 30%;
+			margin: 0 0.3rem 0 0.3rem;
+		}
+		
+		& .fa-utensils, .fa-hands-helping{
+			padding: 5px;
+		}
+
+		}
+	}
+	
+		/************menu-pages*******************/
+
+	/*.menu{
+		justify-content: initial;
+		
+		/*&__title{
+			font-size: 1.7rem;
+			max-width: 500px;
+		}
+
+		& h2{
+			width: 30%;
+			height: 80%;
+			padding: 0;
+			margin: 0;
+		}
+	
+		& + .btn-push{
+			width:  250px;
+			height: 60px;
+			margin: 0 0 40px 0;
+			font-size: 1.2rem;
+			
+		}	*/
+
+	}
+
+	/*#tasks {
+		display: initial;
+		margin-left: 5px;
+		}	
+
+	.entree, .main-course, .dessert{
+		justify-content: initial;
+		flex-direction: column;
+		margin: 5% 0 0 5%;
+	}
+
+	.meal{
+		width: 100%;
+
+	}
+
+}*/
