@@ -47,7 +47,6 @@
 		height: 50px;
 		width: 60px;
 		font-size: 1.5rem;
-		cursor: wait;
 
 		&::before{
 			pointer-events: none;
@@ -62,16 +61,14 @@
 			font-size: 1.6rem;
 			opacity: 1;
 			background-color: white;
-			cursor: wait;
 		}
 
 		&:hover{
 			
 			&::before{
 				opacity: 0;
-				transition: opacity 0.2s ease-out;
+				transition: opacity 0.5s ease-out;
 			}
 			
 		} 
 	}
-	

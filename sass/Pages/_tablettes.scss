@@ -1,0 +1,36 @@
+@media (min-width: 600px) and (max-width: 850px){
+
+	.reserve__text{
+		width: 55%;
+		margin-top: 30px;
+	}
+
+
+	.btn-push{
+		margin: 70px 0 0 10px;
+	}
+
+	.operation{
+		justify-content: initial;
+		flex-wrap: initial;
+		
+		& h2{
+			width: 40%;
+			margin: 135px 0 0 30px;
+		}
+	}
+
+	.restaurant {
+		justify-content: space-around;
+	}
+
+	.restaurant h2{
+		width: 100%;
+		margin: 0 40% 5% 5%;
+	}
+
+	.restaurant__card{
+		width: 48%;
+	}
+
+}

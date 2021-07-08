@@ -216,43 +216,10 @@
 		&:hover{
 			
 			&::before{
-				cursor: wait;
+				cursor: pointer;
 				transition: opacity 1.5s ease-out;
 				opacity: 0;
 			}
 			
 		} 
 	}
-
-
-/*.lds-dual-ring {
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background-color: rgba($colour-background, $alpha: 0.5);
-	      }
-	      .lds-dual-ring:after {
-		content: "";
-		display: block;
-		width: 80px;
-		height: 80px;
-		position: relative;
-		left: 35%;
-		top: 20%;
-		border-radius: 50%;
-		border: 6px solid $colour-primary;
-		border-color: $colour-primary transparent $colour-primary transparent;
-		animation: lds-dual-ring 2s  linear infinite;
-	      }
-	      @keyframes lds-dual-ring {
-			0% {
-			transform: rotate(0deg);
-			}
-			100% {
-			transform: rotate(360deg);
-			}
-		}	
-		.lds-dual-ring{
-			animation: lds-dual-ring 2s timing-function delay iteration-count direction fill-mode;
-		}*/
