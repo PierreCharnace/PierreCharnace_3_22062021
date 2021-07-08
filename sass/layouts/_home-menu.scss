@@ -83,7 +83,6 @@
 .meal{
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
 	width: 90%;
 	max-width: 400px;
 	height: 60px;
@@ -104,24 +103,25 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 115%;
-		width: 65px;
+		height: 70px;
+		width: 4rem;
 		border-radius: 0 1rem 1rem 0;
 		background-color: $colour-tertiary;
 		transition: transform 0.8s ease;
 	}
 
 	& i{
+		
 		position: relative;
 		left: 108%;
 		max-width: 30px;
 		bottom: 55%;
-		width: 22px;
-		height: 21px;
+		width: 1.5rem;
+		height: 1.5rem;
 		z-index: 1;
 		background-color: white;
 		border-radius: 100%;
-		font-size:1.4rem;
+		font-size:1.5rem;
 		color: $colour-tertiary;
 		transition: transform 0.8s ease, transform 0.8s ease;
 	}
@@ -173,7 +173,7 @@
 		align-items: center;
 		width: 15%;
 		background-color: white;
-		margin: 38px 0 0 10px;
+		margin: 38px 2px 0 10px;
 		font-weight: 500;
 		transition: transform 0.7s 0.1s ease;
 	}
