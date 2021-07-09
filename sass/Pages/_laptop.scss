@@ -94,6 +94,11 @@
 			width: 35%;
 		}
 	}
+
+	.menu{
+		flex-direction: column;
+		height: 500px;
+	}
 	
 	.menu__title{
 		justify-content:center;
@@ -112,26 +117,23 @@
 
 
 	.entree, .main-course, .dessert{
-		width: 100%;
+		width: 300px;
 	}
 
-	.meal{
-		max-width: initial;
-		width: 90%;
-		height: 13%;
-		font-size: 1.2rem;
-		padding: 0;
+	/*.meal{
+		
 
 		&__recipe{
 			align-items: center;
-			font-size: 1.4rem;
+			
 		}
 
 		& h3{
 			text-overflow: initial;
     			overflow: initial;
    			white-space: initial;
-			   transition: none;
+			transition: none;
+			transform: none;
 			margin: 0 10px 0 0;
 			width: 40%;
 		}
@@ -142,6 +144,7 @@
     			white-space: initial;
 			width: 50%;
 			transition: none;
+			transform: none;
 		}
 
 		&:hover p{
@@ -151,18 +154,22 @@
     			white-space: initial;
 			width: 30%;
 			transition: none;
+			transform: none;
 		}
 
 		& p{
 			text-overflow: initial;
     			overflow: initial;
     			white-space: initial;
-			    transition: none;
+			transition: none;
+			transform: none;
 			width: 45%;
 		}
 		
 		& span{
-			margin: 20px 2px 0 10px;
+			width: 30px;
+			height: 60px;
+			margin: 25px 2px 0 0;
 			transition: none;
 		}
 
@@ -171,10 +178,12 @@
 		}
 
 		&__translate{
-			height: 90px;
+			bottom: initial;
+			left: 100%;
+
 		}
 
-	}
+	}*/
 
 	.menu + .btn-push{
 		width: 350px;

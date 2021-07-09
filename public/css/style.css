@@ -546,9 +546,11 @@ footer li {
 /**************heart-menu************************/
 .heart__full {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
   border: none;
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 0;
@@ -556,32 +558,28 @@ footer li {
 
 .not-full {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #f5f5f5;
-  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
   font-size: 1.6rem;
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
 .not-full:hover {
   cursor: pointer;
-  transition: opacity 1s ease-out;
   opacity: 0;
 }
 
 .full {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #f5f5f5;
-  mix-blend-mode: lighten;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  background-color: #f5f5f5;
+  mix-blend-mode: lighten;
   width: 40px;
   height: 40px;
   border: 2px solid #f5f5f5;
@@ -860,6 +858,11 @@ footer li {
     width: 35%;
   }
 
+  .menu {
+    flex-direction: column;
+    height: 500px;
+  }
+
   .menu__title {
     justify-content: center;
     width: 80%;
@@ -876,60 +879,73 @@ footer li {
   }
 
   .entree, .main-course, .dessert {
-    width: 100%;
+    width: 300px;
   }
 
-  .meal {
-    max-width: initial;
-    width: 90%;
-    height: 13%;
-    font-size: 1.2rem;
-    padding: 0;
-  }
-  .meal__recipe {
-    align-items: center;
-    font-size: 1.4rem;
-  }
-  .meal h3 {
-    text-overflow: initial;
-    overflow: initial;
-    white-space: initial;
-    transition: none;
-    margin: 0 10px 0 0;
-    width: 40%;
-  }
-  .meal:hover h3 {
-    text-overflow: initial;
-    overflow: initial;
-    white-space: initial;
-    width: 50%;
-    transition: none;
-  }
-  .meal:hover p {
-    text-overflow: initial;
-    overflow: initial;
-    white-space: initial;
-    width: 30%;
-    transition: none;
-  }
-  .meal p {
-    text-overflow: initial;
-    overflow: initial;
-    white-space: initial;
-    transition: none;
-    width: 45%;
-  }
-  .meal span {
-    margin: 20px 2px 0 10px;
-    transition: none;
-  }
-  .meal:hover > span {
-    transform: none;
-  }
-  .meal__translate {
-    height: 90px;
-  }
+  /*.meal{
 
+
+  	&__recipe{
+  		align-items: center;
+
+  	}
+
+  	& h3{
+  		text-overflow: initial;
+     			overflow: initial;
+    			white-space: initial;
+  		transition: none;
+  		transform: none;
+  		margin: 0 10px 0 0;
+  		width: 40%;
+  	}
+
+  	&:hover h3{
+  		text-overflow: initial;
+  		overflow: initial;
+     			white-space: initial;
+  		width: 50%;
+  		transition: none;
+  		transform: none;
+  	}
+
+  	&:hover p{
+
+  		text-overflow: initial;
+  		overflow: initial;
+     			white-space: initial;
+  		width: 30%;
+  		transition: none;
+  		transform: none;
+  	}
+
+  	& p{
+  		text-overflow: initial;
+     			overflow: initial;
+     			white-space: initial;
+  		transition: none;
+  		transform: none;
+  		width: 45%;
+  	}
+
+  	& span{
+  		width: 30px;
+  		height: 60px;
+  		margin: 25px 2px 0 0;
+  		transition: none;
+  	}
+
+  	&:hover > span{
+  		transform: none;
+  	}
+
+  	&__translate{
+  		bottom: initial;
+  		left: 100%;
+
+  	}
+
+  }*/
   .menu + .btn-push {
     width: 350px;
     height: 90px;
