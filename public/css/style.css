@@ -1,120 +1,106 @@
-@charset "UTF-8";
-/*@keyframes fadein {
-	0%{
-		opacity: 0;
-	}
-
-	50%{
-		opacity: 0.2;
-	}
-
-	100%{		
-		opacity: 1;
-	}
-
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
- @keyframes fadein-meal{
-	0%{
-		transform: translateY(15px);
-	}
-
-	100%{
-		transform: translateY(0px);		
-	}
-
- }
-
+@keyframes fadein-meal {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @keyframes background-spinner {
-	0%{	
-		width: 100%;
-		height: 100%;
-		opacity: 0.9;
-	}
-
-	50%{
-		opacity: 0.8;
-	}
-
-
-	100%{
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-	}
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(540deg);
+  }
+}
+.spin {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: #f5f5f5;
+  animation: background-spinner 3s;
+  z-index: 1;
 }
 
-@keyframes loading{
-	0%{
-		opacity: 1;
-		transform: rotate(0deg);
-	}
-
-	100%{	
-		opacity: 1;
-		transform: rotate(540deg);
-	}
+.loading {
+  position: relative;
+  top: 200px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px dashed lightgrey;
+  animation: loading 3s;
+  opacity: 0;
 }
 
-.spin{
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	background-color: $colour-background;
-	animation: background-spinner 3s;
-	z-index: 1;
+.loading__spinner1 {
+  content: "ohmyfood";
+  position: relative;
+  top: 10px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #9356DC;
+  animation: loading-spinner 3s;
 }
 
-.loading{
-	position: relative;
-	top: 200px;
-	width: 120px;
-	height: 120px;
-	border-radius: 100%;
-	border: 3px dashed lightgrey;
-	animation: loading 3s;
-	opacity: 0;
+.loading__spinner2 {
+  content: "ohmyfood";
+  position: relative;
+  top: 25px;
+  left: 80px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #FF79DA;
+  animation: loading-spinner 3s;
 }
 
-.loading__spinner1{
-
-	content: "ohmyfood";
-	position: relative;
-	top: 10px;
-	left: 40px;
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	background: $colour-primary;
-	animation: loading-spinner 3s;
+.loading__spinner3 {
+  content: "ohmyfood";
+  position: relative;
+  top: 10px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #99E2D0;
+  animation: loading-spinner 3s;
 }
 
-.loading__spinner2{
-	content: "ohmyfood";
-	position: relative;
-	top: 25px;
-	left: 80px;
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	background: $colour-secondary;
-	animation: loading-spinner 3s;
-}
-
-.loading__spinner3{
-	content: "ohmyfood";
-	position: relative;
-	top: 10px;
-	left: 15px;
-	width: 30px;
-	height: 30px;
-	border-radius: 100%;
-	background: $colour-tertiary;
-	animation: loading-spinner 3s;
-}*/
 h1 {
   width: 91%;
   margin-left: 20px;
@@ -398,45 +384,23 @@ footer li {
 }
 
 /***********home-menu**********************/
-.block-main--ledelicedessens {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-size: 100% 21%, cover;
-  background-repeat: no-repeat;
-  background-image: url("/public/img/img_le_delice_des_sens.jpg");
-}
-
-.block-main--alafrancaise {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-size: 100% 21%, cover;
-  background-repeat: no-repeat;
-  background-image: url("/public/img/img_a_la_francaise.jpg");
-}
-
-.block-main--lanoteenchantee {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-size: 100% 21%, cover;
-  background-repeat: no-repeat;
-  background-image: url("/public/img/img_la_note_enchantée.jpg");
-  background-size: 100% 30%, cover;
-}
-
-.block-main--lapalettedugout {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-size: 100% 21%, cover;
-  background-repeat: no-repeat;
-  background-image: url("/public/img/img_la_palette_du_gout.jpg");
+.back_img {
+  max-width: 100%;
+  height: 20rem;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #block-page {
   background-color: #f5f5f5;
+}
+
+.block-main--alafrancaise, .block-main--lanoteenchantee, .block-main--lapalettedugout, .block--ledelicedessens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .menu {
@@ -444,7 +408,7 @@ footer li {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 250px 0 20px 0;
+  margin: -80px 0 20px 0;
   border-radius: 2em 2em 0 0;
   background-color: #f5f5f5;
   font-size: 1rem;
@@ -457,6 +421,9 @@ footer li {
   height: 30px;
   max-width: 440px;
   margin-top: 40px;
+  border-radius: 2rem;
+  padding: 30px 10px 0 0;
+  background-color: #f5f5f5;
   font-family: "Shrikhand";
   font-size: 115%;
 }
@@ -501,11 +468,10 @@ footer li {
   overflow: hidden;
   animation: fadein-meal 2s;
 }
-.meal::after {
-  content: "";
+.meal__translate {
   position: relative;
   bottom: 100%;
-  left: 94.5%;
+  left: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -515,28 +481,21 @@ footer li {
   background-color: #99E2D0;
   transition: transform 0.8s ease;
 }
+.meal:hover > .meal__translate {
+  transform: translatex(-100%);
+}
 .meal i {
-  position: relative;
-  left: 108%;
   max-width: 30px;
-  bottom: 55%;
   width: 1.5rem;
   height: 1.5rem;
-  z-index: 1;
   background-color: white;
   border-radius: 100%;
   font-size: 1.5rem;
   color: #99E2D0;
-  transition: transform 0.8s ease, transform 0.8s ease;
+  transition: transform 0.6s 0.2s ease;
 }
-.meal:hover > i {
-  transform: translateX(-320%) rotate(720deg);
-}
-.meal:hover {
-  overflow: clip;
-}
-.meal:hover::after {
-  transform: translatex(-100%);
+.meal:hover i {
+  transform: rotate(360deg);
 }
 .meal__recipe {
   display: flex;
@@ -585,36 +544,49 @@ footer li {
 }
 
 /**************heart-menu************************/
-.menu__title .full {
+.heart__full {
+  display: flex;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: linear-gradient(#9356DC, #FF79DA);
+  padding: 0;
+}
+
+.not-full {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #f5f5f5;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/public/img/heartok1.png);
-  margin-right: 20px;
-  height: 50px;
-  width: 60px;
-  font-size: 1.5rem;
+  position: absolute;
+  font-size: 1.6rem;
+}
+.not-full:hover {
+  cursor: pointer;
+  transition: opacity 1s ease-out;
+  opacity: 0;
 }
 
 .full {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #f5f5f5;
-}
-.full::before {
+  mix-blend-mode: lighten;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 3px;
-  background-color: #f5f5f5;
-  width: 60px;
-  height: 50px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f5f5f5;
   font-size: 1.6rem;
   opacity: 1;
-}
-.full:hover::before {
-  cursor: pointer;
-  transition: opacity 1.5s ease-out;
-  opacity: 0;
 }
 
 .reserve {
@@ -659,37 +631,54 @@ footer li {
 }
 
 /*************heart-index*****************/
-.full-index {
+.heart__full-index {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/public/img/hearto4.png);
-  margin-right: 20px;
-  height: 50px;
-  width: 60px;
-  font-size: 1.5rem;
-}
-.full-index::before {
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  bottom: 1px;
-  right: 0.5px;
-  width: 60px;
-  height: 50px;
+  top: 10px;
+  right: 15px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: linear-gradient(#9356DC, #FF79DA);
+  padding: 0;
+}
+
+.not-full-index {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 1.6rem;
+}
+.not-full-index:hover {
+  cursor: pointer;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+
+.full-index {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  mix-blend-mode: lighten;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
   font-size: 1.6rem;
   opacity: 1;
-  background-color: white;
-}
-.full-index:hover::before {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
 }
 
 /************index-pages*****************/
-@media (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 600px) and (max-width: 950px) {
   .reserve__text {
     width: 55% !important;
     margin-top: 30px;
@@ -732,7 +721,7 @@ footer li {
     max-width: 50%;
   }
   footer img {
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
   footer > ul {
@@ -750,18 +739,19 @@ footer li {
   }
 
   /************menu-pages*******************/
-  .menu {
-    justify-content: initial;
+  #logo {
+    width: 80%;
   }
+
   .menu__title {
     font-size: 1.7rem;
     max-width: 500px;
   }
   .menu h2 {
-    width: 30%;
+    width: 25%;
     height: 80%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 -5rem;
   }
   .menu + .btn-push {
     width: 250px;
@@ -783,6 +773,7 @@ footer li {
 
   .meal {
     width: 100%;
+    max-width: 430px;
   }
   .meal__recipe > h3 {
     text-overflow: initial;
@@ -791,6 +782,162 @@ footer li {
   .meal__recipe > p {
     text-overflow: initial;
     overflow: initial;
+  }
+}
+@media (min-width: 951px) {
+  /************index-page*********************/
+  .reserve__text {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .reserve__text + .btn-push {
+    width: 380px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .operation h2, .restaurant h2 {
+    width: 90%;
+    max-width: none;
+    font-size: 2rem;
+  }
+
+  .ope {
+    flex-wrap: nowrap;
+    justify-content: initial;
+    height: 100px;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .ope__btn {
+    width: 90%;
+    max-width: initial;
+  }
+  .ope__btn .flea {
+    width: 30px;
+    height: 30px;
+  }
+  .ope > li {
+    max-width: 600px;
+  }
+
+  .restaurant {
+    justify-content: space-evenly;
+  }
+  .restaurant__card {
+    max-width: 40%;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding: 20px 0 20px 0;
+  }
+  footer a {
+    max-width: 50%;
+  }
+  footer img {
+    width: 80%;
+    height: 100%;
+  }
+  footer > ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
+    align-items: center;
+    width: 95%;
+  }
+  footer > ul li {
+    width: 100%;
+    margin: 0 0.3rem 0 0.3rem;
+    font-size: 1.1rem;
+  }
+
+  /***********menu-page*****************/
+  .arrow-box {
+    font-size: 2rem;
+  }
+  .arrow-box + a {
+    width: 35%;
+  }
+
+  .menu__title {
+    justify-content: center;
+    width: 80%;
+    max-width: initial;
+  }
+
+  .menu__title > h1 {
+    font-size: 3.5rem;
+    width: 800px;
+  }
+
+  .menu h2 {
+    font-size: 2rem;
+  }
+
+  .entree, .main-course, .dessert {
+    width: 100%;
+  }
+
+  .meal {
+    max-width: initial;
+    width: 90%;
+    height: 13%;
+    font-size: 1.2rem;
+    padding: 0;
+  }
+  .meal__recipe {
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  .meal h3 {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    transition: none;
+    margin: 0 10px 0 0;
+    width: 40%;
+  }
+  .meal:hover h3 {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    width: 50%;
+    transition: none;
+  }
+  .meal:hover p {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    width: 30%;
+    transition: none;
+  }
+  .meal p {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    transition: none;
+    width: 45%;
+  }
+  .meal span {
+    margin: 20px 2px 0 10px;
+    transition: none;
+  }
+  .meal:hover > span {
+    transform: none;
+  }
+  .meal__translate {
+    height: 90px;
+  }
+
+  .menu + .btn-push {
+    width: 350px;
+    height: 90px;
+    font-size: 2rem;
+  }
+
+  #tasks {
+    display: initial;
   }
 }
 

@@ -1,6 +1,6 @@
 		/************index-pages*****************/
 
-@media (min-width: 600px) and (max-width: 850px){
+@media (min-width: 600px) and (max-width: 950px){
 
 	.reserve__text{
 		width: 55%!important;
@@ -51,7 +51,7 @@
 		}
 
 		& img{
-			width: 100%;
+			width: 80%;
 			height: 100%;
 
 		}
@@ -76,8 +76,13 @@
 	
 		/************menu-pages*******************/
 
+
+	#logo{
+		width: 80%;
+	}
+
+
 	.menu{
-		justify-content: initial;
 		
 		&__title{
 			font-size: 1.7rem;
@@ -85,10 +90,10 @@
 		}
 
 		& h2{
-			width: 30%;
+			width: 25%;
 			height: 80%;
 			padding: 0;
-			margin: 0;
+			margin: 0 0 0 -5rem;
 		}
 	
 		& + .btn-push{
@@ -114,6 +119,7 @@
 
 	.meal{
 		width: 100%;
+		max-width: 430px;
 
 
 		&__recipe > h3{

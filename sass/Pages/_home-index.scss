@@ -36,39 +36,50 @@
 
 			/*************heart-index*****************/
 
-	.full-index{
-		
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-image: url(/public/img/hearto4.png);
-		margin-right: 20px;
-		height: 50px;
-		width: 60px;
-		font-size: 1.5rem;
-
-		&::before{
-			pointer-events: none;
-			display: flex;
-			justify-content: center;
-			align-items: center;	
-			position: relative;
-			bottom: 1px;
-			right: 0.5px;
-			width: 60px;
-			height: 50px;
-			font-size: 1.6rem;
-			opacity: 1;
-			background-color: white;
-		}
-
-		&:hover{
-			
-			&::before{
-				opacity: 0;
-				transition: opacity 0.5s ease-out;
+	
+			.heart__full-index{
+				display: flex;
+				position: relative;
+				top: 10px;
+				right: 15px;
+				width: 2.5rem;
+				height: 2.5rem;
+				border: none;
+				background: linear-gradient( $colour-primary, $colour-secondary);
+				padding: 0;
 			}
-			
-		} 
-	}
+		
+			.not-full-index{
+				position: absolute;
+				width: 2.5rem;
+				height: 2.5rem;
+				background-color: $colour-font;
+				opacity: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;		
+				font-size: 1.6rem;
+		
+				&:hover{
+					cursor: pointer;
+					transition: opacity 1s ease-out;
+					opacity: 0;
+				}
+			}
+				
+			.full-index{
+				position: absolute;
+				width: 2.5rem;
+				height: 2.5rem;
+				background-color: $colour-font;
+				mix-blend-mode: lighten;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;		
+				width: 40px;
+				height: 40px;
+				font-size: 1.6rem;
+				opacity: 1;
+			}

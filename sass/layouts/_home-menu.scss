@@ -1,37 +1,22 @@
 				/***********home-menu**********************/
-.block-main--ledelicedessens{
+.back_img{
 	@include backgrimg;
-	background-image: url('/public/img/img_le_delice_des_sens.jpg');
-}
-
-.block-main--alafrancaise{
-	@include backgrimg;
-	background-image: url('/public/img/img_a_la_francaise.jpg');
-}
-
-.block-main--lanoteenchantee{
-	@include backgrimg;
-	background-image: url('/public/img/img_la_note_enchantée.jpg');
-	background-size:100% 30%, cover;
-}
-
-.block-main--lapalettedugout{
-	@include backgrimg;
-	background-image: url('/public/img/img_la_palette_du_gout.jpg');
 }
 
 #block-page{
 	background-color: $colour-background;
 }
 
-
+.block-main--alafrancaise, .block-main--lanoteenchantee, .block-main--lapalettedugout, .block--ledelicedessens{
+	@include background-section;
+}
 
 .menu{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	margin: 250px 0 20px 0;
+	margin: -80px 0 20px 0;
 	border-radius: 2em 2em 0 0;
 	background-color: $colour-background;
 	font-size: 1rem;
@@ -45,6 +30,9 @@
 		height: 30px;
 		max-width: 440px;
 		margin-top: 40px;
+		border-radius: 2rem;
+		padding: 30px 10px 0 0;
+		background-color: $colour-background;
 		font-family: 'Shrikhand';
 		font-size: 115%;
 	
@@ -66,9 +54,6 @@
 .dessert{
 	animation: fadein 3s;;
 }
-
-
-
 
 .entree, .main-course, .dessert {
 	display: flex;
@@ -93,13 +78,12 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 	overflow: hidden;
-	animation: fadein-meal 2s;
+	animation: fadein-meal 2s ;
 	
-	&::after{
-		content: "";
+	&__translate{
 		position: relative;
 		bottom: 100%;
-		left: 94.5%;
+		left: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -110,32 +94,23 @@
 		transition: transform 0.8s ease;
 	}
 
+	&:hover > .meal__translate{
+		transform: translatex(-100%);
+	}
+
 	& i{
-		
-		position: relative;
-		left: 108%;
 		max-width: 30px;
-		bottom: 55%;
 		width: 1.5rem;
 		height: 1.5rem;
-		z-index: 1;
 		background-color: white;
 		border-radius: 100%;
 		font-size:1.5rem;
 		color: $colour-tertiary;
-		transition: transform 0.8s ease, transform 0.8s ease;
+		transition: transform 0.6s 0.2s ease;
 	}
 
-	&:hover > i{
-		transform: translateX(-320%) rotate(720deg);
-	}
-
-	&:hover{
-		overflow: clip;
-
-		&::after{
-			transform: translatex(-100%);
-		}
+	&:hover  i{
+		transform: rotate(360deg);
 	}
 	
 	&__recipe{
@@ -185,41 +160,50 @@
 
 
 		/**************heart-menu************************/
-.menu__title .full{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(/public/img/heartok1.png);
-	margin-right: 20px;
-	height: 50px;
-	width: 60px;
-	font-size: 1.5rem;
-	
-}
-		
-	.full{
-		background-color: #f5f5f5;
 
-		&::before{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: relative;
-			left: 3px;
-			background-color: $colour-background;
-			width: 60px;
-			height: 50px;
-			font-size: 1.6rem;
-			opacity: 1;
-		}
+
+	.heart__full{
+		display: flex;
+		position: relative;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: none;
+		background: linear-gradient( $colour-primary, $colour-secondary);
+		padding: 0;
+	}
+
+	.not-full{
+		position: absolute;
+		width: 2.5rem;
+		height: 2.5rem;
+		background-color: $colour-background;
+		opacity: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;		
+		font-size: 1.6rem;
 
 		&:hover{
-			
-			&::before{
-				cursor: pointer;
-				transition: opacity 1.5s ease-out;
-				opacity: 0;
-			}
-			
-		} 
+			cursor: pointer;
+			transition: opacity 1s ease-out;
+			opacity: 0;
+		}
+	}
+		
+	.full{
+		position: absolute;
+		width: 2.5rem;
+		height: 2.5rem;
+		background-color: $colour-background;
+		mix-blend-mode: lighten;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;		
+		width: 40px;
+		height: 40px;
+		border: 2px solid $colour-background;
+		font-size: 1.6rem;
+		opacity: 1;
 	}

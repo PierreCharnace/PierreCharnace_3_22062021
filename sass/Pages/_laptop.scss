@@ -1,0 +1,189 @@
+@media (min-width: 951px){
+
+
+	/************index-page*********************/
+	.reserve__text{
+		font-size: 1.8rem;
+		width: 100%;
+
+		& + .btn-push{
+			width: 380px;
+			height: 80px;
+			font-size: 1.5rem;
+		}
+	}
+	
+	.operation h2, .restaurant h2{
+		width: 90%;
+		max-width: none;
+		font-size: 2rem;
+	}
+	
+	.ope{
+
+		flex-wrap: nowrap;
+		justify-content: initial;
+		height: 100px;
+		width: 90%;
+		margin-bottom: 50px;
+
+		&__btn{
+			width: 90%;
+			max-width: initial;
+			
+			& .flea{
+				width: 30px;
+				height: 30px;
+			}
+		}
+	
+
+		& > li{
+			max-width: 600px;
+		}
+
+	}
+
+		.restaurant{
+			justify-content: space-evenly;
+			
+
+		&__card{
+			max-width: 40%;
+			margin-top: 20px;
+
+		}
+	}
+
+	footer{
+
+		padding: 20px 0 20px 0;
+
+		& a{
+			max-width: 50%;
+
+		}
+
+		& img{
+			width: 80%;
+			height: 100%;
+
+		}
+		& > ul{
+			display: flex;
+			flex-direction: column;
+			line-height: 1.8rem;
+			align-items: center;
+			width: 95%;
+
+			& li{
+				width: 100%;
+				margin: 0 0.3rem 0 0.3rem;
+				font-size: 1.1rem;
+			}
+
+		}
+	}
+
+		/***********menu-page*****************/
+
+	.arrow-box{
+		font-size: 2rem;
+
+		& + a{
+			width: 35%;
+		}
+	}
+	
+	.menu__title{
+		justify-content:center;
+		width: 80%;
+		max-width: initial;
+	}
+
+	.menu__title > h1{
+		font-size: 3.5rem;
+		width: 800px;
+	}
+
+	.menu h2{
+		font-size: 2rem;
+	}
+
+
+	.entree, .main-course, .dessert{
+		width: 100%;
+	}
+
+	.meal{
+		max-width: initial;
+		width: 90%;
+		height: 13%;
+		font-size: 1.2rem;
+		padding: 0;
+
+		&__recipe{
+			align-items: center;
+			font-size: 1.4rem;
+		}
+
+		& h3{
+			text-overflow: initial;
+    			overflow: initial;
+   			white-space: initial;
+			   transition: none;
+			margin: 0 10px 0 0;
+			width: 40%;
+		}
+
+		&:hover h3{
+			text-overflow: initial;
+			overflow: initial;
+    			white-space: initial;
+			width: 50%;
+			transition: none;
+		}
+
+		&:hover p{
+			
+			text-overflow: initial;
+			overflow: initial;
+    			white-space: initial;
+			width: 30%;
+			transition: none;
+		}
+
+		& p{
+			text-overflow: initial;
+    			overflow: initial;
+    			white-space: initial;
+			    transition: none;
+			width: 45%;
+		}
+		
+		& span{
+			margin: 20px 2px 0 10px;
+			transition: none;
+		}
+
+		&:hover > span{
+			transform: none;
+		}
+
+		&__translate{
+			height: 90px;
+		}
+
+	}
+
+	.menu + .btn-push{
+		width: 350px;
+		height: 90px;
+		font-size: 2rem;
+	}
+	#tasks{
+		display: initial;
+	}
+
+
+}
