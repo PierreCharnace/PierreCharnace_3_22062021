@@ -858,11 +858,6 @@ footer li {
     width: 35%;
   }
 
-  .menu {
-    flex-direction: column;
-    height: 500px;
-  }
-
   .menu__title {
     justify-content: center;
     width: 80%;
@@ -879,73 +874,40 @@ footer li {
   }
 
   .entree, .main-course, .dessert {
-    width: 300px;
+    width: 33%;
+    margin-bottom: 30px;
   }
 
-  /*.meal{
-
-
-  	&__recipe{
-  		align-items: center;
-
-  	}
-
-  	& h3{
-  		text-overflow: initial;
-     			overflow: initial;
-    			white-space: initial;
-  		transition: none;
-  		transform: none;
-  		margin: 0 10px 0 0;
-  		width: 40%;
-  	}
-
-  	&:hover h3{
-  		text-overflow: initial;
-  		overflow: initial;
-     			white-space: initial;
-  		width: 50%;
-  		transition: none;
-  		transform: none;
-  	}
-
-  	&:hover p{
-
-  		text-overflow: initial;
-  		overflow: initial;
-     			white-space: initial;
-  		width: 30%;
-  		transition: none;
-  		transform: none;
-  	}
-
-  	& p{
-  		text-overflow: initial;
-     			overflow: initial;
-     			white-space: initial;
-  		transition: none;
-  		transform: none;
-  		width: 45%;
-  	}
-
-  	& span{
-  		width: 30px;
-  		height: 60px;
-  		margin: 25px 2px 0 0;
-  		transition: none;
-  	}
-
-  	&:hover > span{
-  		transform: none;
-  	}
-
-  	&__translate{
-  		bottom: initial;
-  		left: 100%;
-
-  	}
-
-  }*/
+  .meal {
+    width: 90%;
+    max-width: 600px;
+  }
+  .meal h3 {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    width: 300px;
+    transition: none;
+  }
+  .meal:hover h3 {
+    width: 300px;
+    transition: none;
+    transform: none;
+  }
+  .meal__recipe > p {
+    text-overflow: initial;
+    overflow: initial;
+    white-space: initial;
+    transform: none;
+    transition: none;
+    width: 300px;
+  }
+  .meal:hover p {
+    transition: none;
+    transform: none;
+    text-overflow: initial;
+    width: 300px;
+  }
   .menu + .btn-push {
     width: 350px;
     height: 90px;
@@ -954,6 +916,33 @@ footer li {
 
   #tasks {
     display: initial;
+  }
+}
+@media (min-width: 951px) and (max-width: 1325px) {
+  .meal h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .meal > p {
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .meal:hover h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+  }
+  .meal:hover p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
   }
 }
 
