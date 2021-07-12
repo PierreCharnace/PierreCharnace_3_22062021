@@ -7,7 +7,7 @@
 	background-color: $colour-background;
 }
 
-.block-main--alafrancaise, .block-main--lanoteenchantee, .block-main--lapalettedugout, .block--ledelicedessens{
+.block-main--alafrancaise, .block-main--lanoteenchantee, .block-main--lapalettedugout, .block-main--ledelicedessens{
 	@include background-section;
 }
 
@@ -40,6 +40,8 @@
 
 	&  h2{
 		font-weight: 300;
+		width: 90%;
+		max-width: 400px;
 	}
 }
 
@@ -68,7 +70,7 @@
 .meal{
 	display: flex;
 	flex-wrap: wrap;
-	width: 90%;
+	width: 92%;
 	max-width: 400px;
 	height: 60px;
 	font-size: 0.9rem;
@@ -119,7 +121,6 @@
 		height: 100%;
 		width: 75%;
 		padding-left: 0.8rem;
-		font-size: 0.9rem;
 		transition: width 0.5s;
 	
 		& h3{

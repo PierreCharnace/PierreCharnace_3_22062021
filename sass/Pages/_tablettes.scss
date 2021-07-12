@@ -43,44 +43,8 @@
 			width: 46%;
 		}
 	}
-
-	footer{
-
-		& a{
-			max-width: 50%;
-		}
-
-		& img{
-			width: 80%;
-			height: 100%;
-
-		}
-		& > ul{
-			display: flex;
-			align-items: center;
-			width: 95%;
-			max-width: initial;
-			
-
-		& li{
-			width: 30%;
-			margin: 0 0.3rem 0 0.3rem;
-		}
-		
-		& .fa-utensils, .fa-hands-helping{
-			padding: 5px;
-		}
-
-		}
-	}
 	
 		/************menu-pages*******************/
-
-
-	#logo{
-		width: 80%;
-	}
-
 
 	.menu{
 		
@@ -90,7 +54,7 @@
 		}
 
 		& h2{
-			width: 25%;
+			width: 35%;
 			height: 80%;
 			padding: 0;
 			margin: 0 0 0 -5rem;
@@ -99,7 +63,7 @@
 		& + .btn-push{
 			width:  250px;
 			height: 60px;
-			margin: 0 0 40px 0;
+			margin: 0 0 40px 40px;
 			font-size: 1.2rem;
 			
 		}	
@@ -114,25 +78,12 @@
 	.entree, .main-course, .dessert{
 		justify-content: initial;
 		flex-direction: column;
-		margin: 5% 0 0 5%;
+		margin: 5% 3% 0 5%;
 	}
 
 	.meal{
-		width: 100%;
-		max-width: 430px;
-
-
-		&__recipe > h3{
-			text-overflow: initial;
-			overflow: initial;
-			
-		}
-
-		&__recipe > p{
-			text-overflow: initial;
-			overflow: initial;
-			
-		}
+		width: 95%;
+		font-size: 0.9rem;
 	}
 
 }

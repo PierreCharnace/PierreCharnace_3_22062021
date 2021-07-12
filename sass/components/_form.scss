@@ -2,12 +2,12 @@
 	display: flex;
 	justify-content: center;
 	width: 100%;
-	padding: 1rem 15% 1rem 25%;
+	padding: 1rem 0 1rem 0;
 	background-color: $colour-form;
 	border-top:  0.2rem inset rgba($color: $colour-form, $alpha: 0.2);
 
 		&__in{
-			width: 100%;
+			width: 150px;
 			border: none;
 			background-color: $colour-form;
 			font-size: 1.05em;
@@ -20,7 +20,7 @@
 	}
 
 .fa-map-marker-alt{
-	margin-right: 5%;
+	margin-right: 20px;
 	font-size: 1.3rem;
 
 }

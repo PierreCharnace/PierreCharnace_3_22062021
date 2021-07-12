@@ -6,8 +6,8 @@
 }
 
 @mixin element-width-mobile {
-	width: 90%;
-	max-width: 400px;
+	width: 95%;
+	
 }
 
 @mixin btn-push {
@@ -42,12 +42,12 @@
 	text-overflow: ellipsis;
 	overflow: hidden;
 	white-space: nowrap;
-	width: 250px;
+	width: 100%;
 	transition: width 0.7s;
 	
 }
 
 @mixin ellipsis-recipe-hover{
 		text-overflow: ellipsis;
-		width: 210px;
+		width: 80%;
 }

@@ -2,6 +2,9 @@
 
 footer{
 	@include background-section;
+	justify-content: initial;
+	align-content: center;
+	flex-direction: column;
 	background-color: $background-color-footer;
 
 	& a{
@@ -12,9 +15,8 @@ footer{
 	}
 
 	& img{
-		width: 35%;
-		height: 65%;
-		margin-left: 0.3rem;
+		width: 110px;
+		/*margin-left: 0.3rem;*/
 		filter: invert(1);
 		color: $colour-font;
 	}
@@ -28,8 +30,8 @@ footer{
 		
 	}
 	&  li{
-		width: 100%;
-		margin: 0.5rem;
+		width: 250px;
+		margin: 0.5rem 0 0.5rem 0;
 		font-size: 0.9rem;
 	}
 
