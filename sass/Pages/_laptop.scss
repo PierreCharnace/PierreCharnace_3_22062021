@@ -79,17 +79,23 @@
 	}
 
 	.meal{
-		width: 95%;
-		font-size: 0.9rem;
+		width: 77%;
+		font-size: 0.81rem;
 	}
 
 	.menu + .btn-push{
-		width: 350px;
-		height: 90px;
-		font-size: 2rem;
+		width: 300px;
+		height: 70px;
+		font-size: 1.6rem;
 	}
 	#tasks{
 		display: initial;
 	}
 }
 	
+@media (min-width: 1271px){
+	.meal{
+	
+		font-size: 0.95rem;
+	}
+}
