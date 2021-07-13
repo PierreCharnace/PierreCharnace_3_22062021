@@ -101,6 +101,11 @@
   animation: loading-spinner 3s;
 }
 
+@keyframes scaley {
+  0% {
+    transform: scaleY(0);
+  }
+}
 h1 {
   width: 91%;
   margin-left: 20px;
@@ -457,8 +462,7 @@ footer li {
   box-shadow: 0 0.3rem 0.9rem lightgrey;
   border-radius: 1rem;
   overflow: hidden;
-  cursor: pointer;
-  animation: fadein-meal 2s;
+  animation: scaley 1000ms 300ms linear both;
 }
 .meal__translate {
   position: relative;
@@ -816,6 +820,11 @@ footer li {
 @media (min-width: 1271px) {
   .meal {
     font-size: 0.95rem;
+  }
+}
+@media (min-width: 2000px) {
+  .meal {
+    margin: 0.5rem 2rem;
   }
 }
 

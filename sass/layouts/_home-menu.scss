@@ -68,8 +68,7 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 	overflow: hidden;
-	cursor: pointer;
-	animation: fadein-meal 2s;
+	animation: scaley 1000ms 300ms linear both;
 	
 	&__translate{
 		position: relative;

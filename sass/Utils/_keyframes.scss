@@ -114,3 +114,15 @@
 	background: $colour-tertiary;
 	animation: loading-spinner 3s;
 }
+
+@keyframes scaley{
+
+	0% {
+
+	transform: scaleY(0);
+	}
+
+	100% {
+
+	}
+}
