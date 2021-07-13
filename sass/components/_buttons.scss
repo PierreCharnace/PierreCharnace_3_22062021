@@ -35,7 +35,7 @@
 		font-size: 1rem;
 		font-weight: bold;
 		background-color: $colour-background;
-		transition: background-color 200ms 300ms, color 500ms;
+		transition: background-color 200ms 300ms color 500ms;
 
 		&:focus{
 			background-color: $colour-primary-ope;

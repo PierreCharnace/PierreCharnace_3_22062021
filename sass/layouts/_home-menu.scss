@@ -43,28 +43,16 @@
 		width: 90%;
 		max-width: 400px;
 	}
-}
 
-.entree{
-	animation: fadein 1s ;
-}
+	& .menu__spe{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 5px;
+		animation: fadein 2s ;
+		}
 
-.main-course{
-	animation: fadein 2s;
-}
 
-.dessert{
-	animation: fadein 3s;;
-}
-
-.entree, .main-course, .dessert {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	}
-
-.dessert{
-	margin-bottom: 45px;
 }
 
 .meal{
@@ -80,7 +68,8 @@
 	box-shadow: 0 0.3rem 0.9rem $colour-shadow;
 	border-radius: 1rem;
 	overflow: hidden;
-	animation: fadein-meal 2s ;
+	cursor: pointer;
+	animation: fadein-meal 2s;
 	
 	&__translate{
 		position: relative;
@@ -101,12 +90,11 @@
 	}
 
 	& i{
-		max-width: 30px;
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 1.53rem;
+		height: 1.53rem;
 		background-color: white;
 		border-radius: 100%;
-		font-size:1.5rem;
+		font-size:1.6rem;
 		color: $colour-tertiary;
 		transition: transform 0.6s 0.2s ease;
 	}

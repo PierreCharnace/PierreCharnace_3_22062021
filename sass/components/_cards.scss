@@ -5,6 +5,7 @@
 	&__card{
 		
 		@include element-width-mobile;
+		max-width: 500px;
 		height: 250px;
 		border-radius: 1em;
 		background-color: white;

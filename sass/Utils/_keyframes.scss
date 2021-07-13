@@ -4,7 +4,7 @@
 	}
 	
 	50%{
-		opacity: 0.2;
+		opacity: 0.1;
 	}
 
 	100%{		
@@ -62,7 +62,7 @@
 	width: 0;
 	height: 0;
 	background-color: $colour-background;
-	animation: background-spinner 3s;
+	animation: background-spinner 2.5s;
 	z-index: 1;
 	opacity: 0;
 }

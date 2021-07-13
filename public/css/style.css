@@ -3,7 +3,7 @@
     opacity: 0;
   }
   50% {
-    opacity: 0.2;
+    opacity: 0.1;
   }
   100% {
     opacity: 1;
@@ -49,7 +49,7 @@
   width: 0;
   height: 0;
   background-color: #f5f5f5;
-  animation: background-spinner 3s;
+  animation: background-spinner 2.5s;
   z-index: 1;
   opacity: 0;
 }
@@ -110,7 +110,7 @@ h2 {
   font-weight: 900;
   font-size: 1.2em;
   width: 95%;
-  padding: 2rem 0 0 0;
+  padding: 1.5rem 0 0 0;
 }
 
 .operation h2 {
@@ -181,7 +181,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   background-color: #f5f5f5;
-  transition: background-color 200ms 300ms, color 500ms;
+  transition: background-color 200ms 300ms color 500ms;
 }
 .ope__btn:focus {
   background-color: rgba(146, 86, 220, 0.1);
@@ -255,6 +255,7 @@ h2 > span {
 /***************cards************/
 .restaurant__card {
   width: 95%;
+  max-width: 500px;
   height: 250px;
   border-radius: 1em;
   background-color: white;
@@ -435,27 +436,12 @@ footer li {
   width: 90%;
   max-width: 400px;
 }
-
-.entree {
-  animation: fadein 1s;
-}
-
-.main-course {
-  animation: fadein 2s;
-}
-
-.dessert {
-  animation: fadein 3s;
-}
-
-.entree, .main-course, .dessert {
+.menu .menu__spe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.dessert {
-  margin-bottom: 45px;
+  margin-bottom: 5px;
+  animation: fadein 2s;
 }
 
 .meal {
@@ -471,6 +457,7 @@ footer li {
   box-shadow: 0 0.3rem 0.9rem lightgrey;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
   animation: fadein-meal 2s;
 }
 .meal__translate {
@@ -490,12 +477,11 @@ footer li {
   transform: translatex(-100%);
 }
 .meal i {
-  max-width: 30px;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.53rem;
+  height: 1.53rem;
   background-color: white;
   border-radius: 100%;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #99E2D0;
   transition: transform 0.6s 0.2s ease;
 }
@@ -680,15 +666,6 @@ footer li {
 }
 /************index-pages*****************/
 @media (min-width: 600px) and (max-width: 950px) {
-  .reserve__text {
-    width: 55% !important;
-    margin-top: 30px;
-  }
-
-  .btn-push {
-    margin: 70px 0 0 10px;
-  }
-
   .operation {
     justify-content: initial;
     height: 400px;
@@ -741,7 +718,7 @@ footer li {
     margin-left: 5px;
   }
 
-  .entree, .main-course, .dessert {
+  .menu__spe {
     justify-content: initial;
     flex-direction: column;
     margin: 5% 3% 0 5%;
@@ -752,11 +729,6 @@ footer li {
     font-size: 0.9rem;
   }
 }
-/*@media (min-width: 951px) and (max-width: 1270px){
-	.meal{
-		font-size: 0.7rem;
-	}
-}*/
 @media (min-width: 951px) {
   /************index-page*********************/
   .reserve__text {
@@ -765,6 +737,7 @@ footer li {
     flex-wrap: wrap;
     font-size: 1.8rem;
     height: 220px;
+    width: 95%;
   }
   .reserve__text + .btn-push {
     width: 380px;
@@ -773,7 +746,6 @@ footer li {
   }
 
   .operation h2, .restaurant h2 {
-    width: 90%;
     max-width: none;
     font-size: 2rem;
   }
@@ -782,7 +754,7 @@ footer li {
     flex-wrap: nowrap;
     justify-content: initial;
     height: 100px;
-    width: 90%;
+    width: 95%;
     margin-bottom: 50px;
   }
   .ope__btn {
@@ -821,14 +793,14 @@ footer li {
     font-size: 2rem;
   }
 
-  .entree, .main-course, .dessert {
-    width: 31%;
+  .menu__spe {
+    width: 33%;
     margin-bottom: 30px;
   }
 
   .meal {
-    width: 77%;
-    font-size: 0.81rem;
+    width: 95%;
+    font-size: 0.76rem;
   }
 
   .menu + .btn-push {
