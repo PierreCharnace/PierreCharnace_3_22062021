@@ -1,13 +1,16 @@
 @keyframes fadein {
 	0%{
 		opacity: 0;
+		transform: translateY(15px);
+
 	}
 	
 	50%{
-		opacity: 0.1;
+		opacity: 0.3;
 	}
 
 	100%{		
+		transform: translateY(0px);	
 		opacity: 1;
 	}
 
@@ -15,11 +18,10 @@
 
  @keyframes fadein-meal{
 	0%{
-		transform: translateY(15px);
 	}
 
 	100%{
-		transform: translateY(0px);		
+			
 	}
 
  }
@@ -113,16 +115,4 @@
 	border-radius: 100%;
 	background: $colour-tertiary;
 	animation: loading-spinner 3s;
-}
-
-@keyframes scaley{
-
-	0% {
-
-	transform: scaleY(0);
-	}
-
-	100% {
-
-	}
 }

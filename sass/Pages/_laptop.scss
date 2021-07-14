@@ -79,7 +79,7 @@
 
 	.meal{
 		width: 95%;
-		font-size: 0.76rem;
+		font-size: 0.71rem;
 	}
 
 	.menu + .btn-push{
@@ -93,9 +93,12 @@
 }
 	
 @media (min-width: 1271px){
-	.meal{
-	
+	.meal{	
 		font-size: 0.95rem;
+	}
+
+	.restaurant__card{
+		max-width: 40%;
 	}
 }
 

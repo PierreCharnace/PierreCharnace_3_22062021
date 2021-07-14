@@ -25,20 +25,22 @@
 	
 			.heart__full-index{
 				display: flex;
+				justify-content: center;
+				align-items: center;
 				position: relative;
 				top: 10px;
 				right: 15px;
-				width: 2.5rem;
-				height: 2.5rem;
+				width: 40px;
+				height: 40px;
 				border: none;
 				background: linear-gradient( $colour-primary, $colour-secondary);
 				padding: 0;
 			}
 		
-			.not-full-index{
+			button > .not-full-index{
 				position: absolute;
-				width: 2.5rem;
-				height: 2.5rem;
+				width: 40px;
+				height: 40px;
 				background-color: $colour-font;
 				opacity: 1;
 				display: flex;
@@ -49,23 +51,21 @@
 		
 				&:hover{
 					cursor: pointer;
-					transition: opacity 1s ease-out;
+					transition: opacity 250ms ease-out;
 					opacity: 0;
 				}
 			}
 				
-			.full-index{
+			button > .full-index{
 				position: absolute;
-				width: 2.5rem;
-				height: 2.5rem;
+				width: 42px;
+				height: 42px;
 				background-color: $colour-font;
 				mix-blend-mode: lighten;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				position: absolute;		
-				width: 40px;
-				height: 40px;
 				font-size: 1.6rem;
 				opacity: 1;
 			}

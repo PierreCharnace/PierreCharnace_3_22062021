@@ -1,22 +1,17 @@
 @keyframes fadein {
   0% {
     opacity: 0;
+    transform: translateY(15px);
   }
   50% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadein-meal {
-  0% {
-    transform: translateY(15px);
+    opacity: 0.3;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
+@keyframes fadein-meal {}
 @keyframes background-spinner {
   0% {
     opacity: 1;
@@ -101,11 +96,6 @@
   animation: loading-spinner 3s;
 }
 
-@keyframes scaley {
-  0% {
-    transform: scaleY(0);
-  }
-}
 h1 {
   width: 91%;
   margin-left: 20px;
@@ -186,7 +176,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   background-color: #f5f5f5;
-  transition: background-color 200ms 300ms color 500ms;
+  transition: background-color 500ms;
 }
 .ope__btn:focus {
   background-color: rgba(146, 86, 220, 0.1);
@@ -212,6 +202,7 @@ body {
   padding: 0 1rem 0 1rem;
   color: grey;
   font-size: 1.3em;
+  transition: color 500ms;
 }
 
 /*Button_new_in_restaurants*/
@@ -446,7 +437,19 @@ footer li {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 5px;
-  animation: fadein 2s;
+  /*animation: fadein 2000ms ease-in-out;*/
+}
+
+.menu__spe:nth-child(2) {
+  animation: fadein 1000ms ease-in;
+}
+
+.menu__spe:nth-child(3) {
+  animation: fadein 1500ms ease-in;
+}
+
+.menu__spe:nth-child(4) {
+  animation: fadein 2000ms ease-in;
 }
 
 .meal {
@@ -462,7 +465,7 @@ footer li {
   box-shadow: 0 0.3rem 0.9rem lightgrey;
   border-radius: 1rem;
   overflow: hidden;
-  animation: scaley 1000ms 300ms linear both;
+  /*animation: fadein 2000ms ease-in-out;*/
 }
 .meal__translate {
   position: relative;
@@ -481,13 +484,16 @@ footer li {
   transform: translatex(-100%);
 }
 .meal i {
-  width: 1.53rem;
-  height: 1.53rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.45rem;
+  height: 1.45rem;
   background-color: white;
-  border-radius: 100%;
+  border-radius: 100px;
   font-size: 1.6rem;
-  color: #99E2D0;
   transition: transform 0.6s 0.2s ease;
+  color: #99E2D0;
 }
 .meal:hover i {
   transform: rotate(360deg);
@@ -550,7 +556,7 @@ footer li {
   padding: 0;
 }
 
-.not-full {
+button > .not-full {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -560,23 +566,22 @@ footer li {
   background-color: #f5f5f5;
   font-size: 1.6rem;
   opacity: 1;
-  transition: opacity 1s ease-out;
+  transition: opacity 0.25s ease-out;
 }
-.not-full:hover {
+button > .not-full:hover {
   cursor: pointer;
   opacity: 0;
 }
 
-.full {
+button > .full {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5f5f5;
   mix-blend-mode: lighten;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #f5f5f5;
+  width: 42px;
+  height: 42px;
   font-size: 1.6rem;
   opacity: 1;
 }
@@ -614,20 +619,22 @@ footer li {
 /*************heart-index*****************/
 .heart__full-index {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: 10px;
   right: 15px;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
   border: none;
   background: linear-gradient(#9356DC, #FF79DA);
   padding: 0;
 }
 
-.not-full-index {
+button > .not-full-index {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 40px;
+  height: 40px;
   background-color: #fff;
   opacity: 1;
   display: flex;
@@ -636,24 +643,22 @@ footer li {
   position: absolute;
   font-size: 1.6rem;
 }
-.not-full-index:hover {
+button > .not-full-index:hover {
   cursor: pointer;
-  transition: opacity 1s ease-out;
+  transition: opacity 250ms ease-out;
   opacity: 0;
 }
 
-.full-index {
+button > .full-index {
   position: absolute;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 42px;
+  height: 42px;
   background-color: #fff;
   mix-blend-mode: lighten;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 40px;
-  height: 40px;
   font-size: 1.6rem;
   opacity: 1;
 }
@@ -804,7 +809,7 @@ footer li {
 
   .meal {
     width: 95%;
-    font-size: 0.76rem;
+    font-size: 0.71rem;
   }
 
   .menu + .btn-push {
@@ -820,6 +825,10 @@ footer li {
 @media (min-width: 1271px) {
   .meal {
     font-size: 0.95rem;
+  }
+
+  .restaurant__card {
+    max-width: 40%;
   }
 }
 @media (min-width: 2000px) {
