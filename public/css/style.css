@@ -558,7 +558,7 @@ footer li {
   padding: 0;
 }
 
-button > .not-full {
+div > .not-full {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -570,12 +570,12 @@ button > .not-full {
   opacity: 1;
   transition: opacity 0.25s ease-out;
 }
-button > .not-full:hover {
+div > .not-full:hover {
   cursor: pointer;
   opacity: 0;
 }
 
-button > .full {
+div > .full {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -633,7 +633,7 @@ button > .full {
   padding: 0;
 }
 
-button > .not-full-index {
+div > .not-full-index {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -645,13 +645,13 @@ button > .not-full-index {
   position: absolute;
   font-size: 1.6rem;
 }
-button > .not-full-index:hover {
+div > .not-full-index:hover {
   cursor: pointer;
   transition: opacity 250ms ease-out;
   opacity: 0;
 }
 
-button > .full-index {
+div > .full-index {
   position: absolute;
   width: 42px;
   height: 42px;
