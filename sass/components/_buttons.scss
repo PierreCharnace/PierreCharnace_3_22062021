@@ -36,6 +36,7 @@
 		font-weight: bold;
 		background-color: $colour-background;
 		transition: background-color 500ms;
+		cursor: pointer;
 
 		&:focus{
 			background-color: $colour-primary-ope;

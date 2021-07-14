@@ -22,6 +22,7 @@
 	border: none;
 	box-shadow: 0 0.4rem 0.5rem $colour-shadow;
 	transition: opacity 200ms 300ms, box-shadow 500ms;
+	cursor: pointer;
 	
 	
 	&:hover{
