@@ -11,7 +11,6 @@
     opacity: 1;
   }
 }
-@keyframes fadein-meal {}
 @keyframes background-spinner {
   0% {
     opacity: 1;
@@ -357,9 +356,7 @@ footer a {
 }
 footer img {
   width: 110px;
-  /*margin-left: 0.3rem;*/
   filter: invert(1);
-  color: #fff;
 }
 footer > ul {
   width: 95%;
@@ -435,7 +432,8 @@ footer li {
   width: 90%;
   max-width: 400px;
 }
-.menu .menu__spe {
+
+.menu__spe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -467,7 +465,6 @@ footer li {
   box-shadow: 0 0.3rem 0.9rem lightgrey;
   border-radius: 1rem;
   overflow: hidden;
-  /*animation: fadein 2000ms ease-in-out;*/
 }
 .meal__translate {
   position: relative;
@@ -509,7 +506,6 @@ footer li {
   transition: width 0.5s;
 }
 .meal__recipe h3 {
-  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -517,7 +513,6 @@ footer li {
   font-weight: 500;
 }
 .meal__recipe > p {
-  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -642,7 +637,6 @@ div > .not-full-index {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   font-size: 1.6rem;
 }
 div > .not-full-index:hover {
@@ -660,7 +654,6 @@ div > .full-index {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   font-size: 1.6rem;
   opacity: 1;
 }
@@ -685,7 +678,7 @@ div > .full-index {
   .operation h2 {
     width: 30%;
     height: 300px;
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 20px;
     padding: 0;
   }
 
@@ -700,7 +693,7 @@ div > .full-index {
   .restaurant h2 {
     width: 100%;
     max-width: 100%;
-    margin: 0 0px 20px 30px;
+    margin: 0 0px 20px 20px;
   }
   .restaurant__card {
     width: 46%;
@@ -738,6 +731,9 @@ div > .full-index {
   .meal {
     width: 95%;
     font-size: 0.9rem;
+  }
+  .meal__recipe {
+    width: 286px;
   }
 }
 @media (min-width: 951px) {
@@ -825,12 +821,29 @@ div > .full-index {
   }
 }
 @media (min-width: 1271px) {
-  .meal {
-    font-size: 0.95rem;
+  /***************home-page***********************/
+  .operation h2, .restaurant h2 {
+    max-width: 87%;
   }
 
   .restaurant__card {
     max-width: 40%;
+  }
+
+  .ope {
+    max-width: 87%;
+  }
+
+  footer > a {
+    width: 87%;
+  }
+  footer > ul {
+    width: 87%;
+  }
+
+  /************home-menu***************/
+  .meal {
+    font-size: 0.95rem;
   }
 }
 @media (min-width: 2000px) {

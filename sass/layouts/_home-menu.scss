@@ -41,14 +41,14 @@
 		width: 90%;
 		max-width: 400px;
 	}
-
-	& .menu__spe{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-bottom: 5px;
-		}
 }
+
+.menu__spe{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 5px;
+	}
 
 .menu__spe:nth-child(2){
 	animation: fadein 1000ms ease-in;

@@ -93,15 +93,38 @@
 }
 	
 @media (min-width: 1271px){
-	.meal{	
-		font-size: 0.95rem;
-	}
+
+	/***************home-page***********************/
+
+	.operation h2, .restaurant h2{
+		max-width: 87%;
+	}	
 
 	.restaurant__card{
 		max-width: 40%;
 	}
-}
 
+	.ope{
+		max-width: 87%;
+	}
+
+	footer{
+
+		& > a{
+			width: 87%;
+		}
+
+		& > ul{
+		width: 87%;
+		}
+	}
+	/************home-menu***************/
+	.meal{	
+		font-size: 0.95rem;
+	}
+
+
+}
 
 @media (min-width: 2000px){
 	.meal{
